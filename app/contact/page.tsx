@@ -49,7 +49,7 @@ export default function ContactPage() {
       setSubmitted(true);
       setFormData({
         name: "",
-        email: "",
+        phone: "",
         subject: "",
         message: "",
       });
