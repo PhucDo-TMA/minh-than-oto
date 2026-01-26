@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cars } from "@/data/cars";
+import GalleryViewer from "@/components/GalleryViewer";
 
 interface PageProps {
   params: Promise<{
@@ -32,27 +33,7 @@ export default async function CarDetailPage({ params }: PageProps) {
 
       <div className="detail-container">
         <div className="detail-gallery">
-          <div className="main-image">
-            <Image
-              src={car.image}
-              alt={car.name}
-              width={600}
-              height={400}
-              className="image"
-            />
-          </div>
-          <div className="gallery-thumbs">
-            {car.gallery.map((img, idx) => (
-              <div key={idx} className="thumb">
-                <Image
-                  src={img}
-                  alt={`${car.name} ${idx}`}
-                  width={100}
-                  height={80}
-                />
-              </div>
-            ))}
-          </div>
+          <GalleryViewer images={car.gallery} carName={car.name} mainImage={car.image} />
         </div>
 
         <div className="detail-info">
