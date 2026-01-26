@@ -1051,6 +1051,42 @@ main {
   font-family: inherit;
 }
 
+.form-input[type="text"],
+.form-input[type="tel"] {
+  background: #ffffff;
+  color: #1f2937;
+  border: 2px solid #e5e7eb;
+}
+
+.form-input[type="text"]::placeholder,
+.form-input[type="tel"]::placeholder {
+  color: #9ca3af;
+}
+
+.form-input[type="text"]:focus,
+.form-input[type="tel"]:focus {
+  background: #ffffff;
+  color: #000000;
+}
+
+select.form-input {
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #e5e7eb;
+}
+
+select.form-input option {
+  background: white;
+  color: #000000;
+  padding: 0.5rem;
+}
+
+select.form-input option:checked {
+  background: #2563eb;
+  color: #ffffff;
+}
+
 .form-input:focus {
   outline: none;
   border-color: var(--primary);

@@ -4,7 +4,6 @@ import { useState, FormEvent } from "react";
 
 interface FormData {
   name: string;
-  email: string;
   phone: string;
   subject: string;
   message: string;
@@ -13,7 +12,6 @@ interface FormData {
 export default function ContactPage() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
-    email: "",
     phone: "",
     subject: "",
     message: "",
@@ -37,13 +35,21 @@ export default function ContactPage() {
     setLoading(true);
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || "Failed to send message");
+      }
+
       setSubmitted(true);
       setFormData({
         name: "",
         email: "",
-        phone: "",
         subject: "",
         message: "",
       });
@@ -51,6 +57,7 @@ export default function ContactPage() {
       setTimeout(() => setSubmitted(false), 5000);
     } catch (error) {
       console.error("Error submitting form:", error);
+      alert("Lỗi: " + (error as Error).message);
     } finally {
       setLoading(false);
     }
@@ -88,15 +95,14 @@ export default function ContactPage() {
             <div className="icon">✉️</div>
             <h3>Email</h3>
             <p>
-              <a href="mailto:info@minthanauto.com">info@minthanauto.com</a>
+              <a href="mailto:dohuuphuc5678@gmail.com">dohuuphuc5678@gmail.com</a>
             </p>
           </div>
 
           <div className="info-card">
             <div className="icon">⏰</div>
             <h3>Giờ làm việc</h3>
-            <p>Thứ 2 - Thứ 6: 8:00 - 18:00</p>
-            <p>Thứ 7 - Chủ nhật: 9:00 - 17:00</p>
+            <p>Thứ 2 - Chủ nhật: 7:00 - 22:00</p>
           </div>
         </aside>
 
@@ -120,20 +126,6 @@ export default function ContactPage() {
                 required
                 className="form-input"
                 placeholder="Nhập họ và tên của bạn"
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="email">Email *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="form-input"
-                placeholder="your.email@example.com"
               />
             </div>
 
