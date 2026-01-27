@@ -117,8 +117,7 @@ export default function AdminPage() {
       if (!res.ok) return alert("Thêm thất bại");
     }
 
-    regallery: "",
-      setForm();
+    resetForm();
     load();
   }
 
@@ -127,6 +126,7 @@ export default function AdminPage() {
       name: "",
       slug: "",
       image: "/cars/placeholder.jpg",
+      gallery: "",
       year: new Date().getFullYear(),
       priceFormatted: "",
       price: 0,
