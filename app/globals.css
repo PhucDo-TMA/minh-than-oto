@@ -897,6 +897,7 @@ main {
 .btn-contact {
   background: var(--primary);
   color: white;
+  text-decoration: none;
 }
 
 .btn-contact:hover {
@@ -907,6 +908,7 @@ main {
 .btn-test-drive {
   background: var(--success);
   color: white;
+  text-decoration: none;
 }
 
 .btn-test-drive:hover {

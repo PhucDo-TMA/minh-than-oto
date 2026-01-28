@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 interface FormData {
   name: string;
@@ -10,12 +11,23 @@ interface FormData {
 }
 
 export default function ContactPage() {
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
     subject: "",
     message: "",
   });
+
+  useEffect(() => {
+    const subject = searchParams.get("subject");
+    if (subject === "test-drive") {
+      setFormData((prev) => ({
+        ...prev,
+        subject: "test-drive",
+      }));
+    }
+  }, [searchParams]);
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);

@@ -92,8 +92,8 @@ export default async function CarDetailPage({ params }: PageProps) {
           </div>
 
           <div className="action-buttons">
-            <button className="btn-contact">📞 Liên hệ tư vấn</button>
-            <button className="btn-test-drive">🚗 Đăng ký lái thử</button>
+            <Link href="/contact" className="btn-contact">📞 Liên hệ tư vấn</Link>
+            <Link href="/contact?subject=test-drive" className="btn-test-drive">🚗 Đăng ký lái thử</Link>
           </div>
         </div>
       </div>
