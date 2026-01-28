@@ -39,9 +39,9 @@ main {
 
 /* ===== Contact Info Bar ===== */
 .contact-info-bar {
-  background: linear-gradient(90deg, var(--primary), #1e40af);
+  background: #1a1a1a;
   padding: 0.75rem 0;
-  border-bottom: 2px solid var(--primary-dark);
+  border-bottom: 2px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 99;
@@ -75,11 +75,18 @@ main {
   color: white;
   text-decoration: none;
   transition: opacity 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .contact-item a:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+.zalo-link svg {
+  color: #0084ff;
 }
 
 .contact-separator {

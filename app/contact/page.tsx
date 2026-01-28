@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent, useEffect } from "react";
+import { useState, FormEvent, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 interface FormData {
@@ -10,7 +10,7 @@ interface FormData {
   message: string;
 }
 
-export default function ContactPage() {
+function ContactPageContent() {
   const searchParams = useSearchParams();
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -206,5 +206,13 @@ export default function ContactPage() {
         />
       </section>
     </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div className="contact-page"><p>Đang tải...</p></div>}>
+      <ContactPageContent />
+    </Suspense>
   );
 }
