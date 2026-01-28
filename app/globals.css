@@ -767,6 +767,8 @@ main {
 
 .detail-info .header {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .detail-info h1 {
