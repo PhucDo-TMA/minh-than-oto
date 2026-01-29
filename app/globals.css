@@ -32,6 +32,15 @@ body {
   line-height: 1.6;
 }
 
+/* Remove all underlines from links */
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
 /* ===== Layout ===== */
 main {
   min-height: 100vh;
@@ -42,9 +51,6 @@ main {
   background: #1a1a1a;
   padding: 0.75rem 0;
   border-bottom: 2px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 99;
 }
 
 .contact-info-container {
@@ -82,7 +88,6 @@ main {
 
 .contact-item a:hover {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 .zalo-link svg {
@@ -498,15 +503,17 @@ main {
 
 .btn-details {
   background: transparent;
-  color: var(--primary);
+  color: white;
   border: none;
   cursor: pointer;
   font-weight: 600;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .btn-details:hover {
-  color: var(--primary-dark);
+  color: var(--text-muted);
+  text-decoration: none;
 }
 
 /* ===== Stats Section ===== */
@@ -1014,7 +1021,6 @@ main {
 
 .info-card a:hover {
   color: var(--primary-dark);
-  text-decoration: underline;
 }
 
 .contact-form-wrapper {
