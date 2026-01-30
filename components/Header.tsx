@@ -17,7 +17,6 @@ export default function Header() {
             <span className="contact-icon">📍</span>
             <span>507 QL1A, KP18, Bình Tân, Thành phố Hồ Chí Minh, Vietnam</span>
           </div>
-          <div className="contact-separator">|</div>
           <div className="contact-item">
             <span className="contact-icon">📞</span>
             <a href="tel:0936211276">0936 211 276 (Thân)</a>

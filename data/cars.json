@@ -1,217 +1,215 @@
 [
   {
-    "name": "Mercedes C300",
-    "slug": "mercedes-c300",
-    "image": "/cars/Mercedes_C300/side.jpg",
-    "year": 2024,
-    "price": 1800000000,
-    "priceFormatted": "1.8 tỷ",
+    "name": "Toyota VIOS",
+    "slug": "vios-2017-tudong",
+    "image": "/cars/Toyota/Vios_2017_299/Front.jpg",
+    "year": 2017,
+    "price": 299,
+    "priceFormatted": "299 triệu",
     "category": "Sedan",
-    "brand": "Mercedes-Benz",
-    "specs": {
-      "engine": "2.0L Turbo",
-      "power": "255 HP",
-      "gearbox": "9AT",
-      "acceleration": "6.3s",
-      "topSpeed": "250 km/h",
-      "fuelConsumption": "6.5 L/100km"
-    },
-    "gallery": [
-      "/cars/Mercedes_C300/side.jpg",
-      "/cars/Mercedes_C300/front.jpg",
-      "/cars/Mercedes_C300/main.jpg",
-      "/cars/Mercedes_C300/wheel.jpg"
-    ],
-    "description": "Sedan hạng sang Mercedes C300 với thiết kế sang trọng, công nghệ hiện đại và hiệu suất vượt trội.",
-    "features": [
-      "Hệ thống an toàn ADAS",
-      "Nội thất da Nappa",
-      "Hệ thống âm thanh Burmester",
-      "Điều khiển hành trình thích ứng",
-      "Cửa sổ trời toàn cảnh"
-    ]
-  },
-  {
-    "name": "Toyota Fortuner",
-    "slug": "toyota-fortuner",
-    "image": "/cars/ToyotaFotuner/main.jpg",
-    "year": 2024,
-    "price": 1300000000,
-    "priceFormatted": "1.3 tỷ",
-    "category": "SUV",
     "brand": "Toyota",
+    "description": "VIOS 2017 số tự động, 1 chủ mua mới. Xe đẹp !",
     "specs": {
-      "engine": "2.7L",
-      "power": "164 HP",
-      "gearbox": "6AT",
-      "acceleration": "10.5s",
-      "topSpeed": "190 km/h",
-      "fuelConsumption": "8.5 L/100km"
-    },
-    "gallery": [
-      "/cars/ToyotaFotuner/main.jpg",
-      "/cars/ToyotaFotuner/fortuner.jpg",
-      "/cars/ToyotaFotuner/side.jpg"
-    ],
-    "description": "SUV 7 chỗ mạnh mẽ, bền bỉ và phổ biến tại Việt Nam. Lý tưởng cho gia đình lớn.",
-    "features": [
-      "7 chỗ ngồi thoải mái",
-      "Khả năng off-road vượt trội",
-      "Hộp số tự động 6 cấp",
-      "Hệ thống cân bằng điện tử VSC",
-      "Camera lùi tiêu chuẩn"
-    ]
-  },
-  {
-    "name": "Ford Ranger",
-    "slug": "ford-ranger",
-    "image": "/cars/ranger.jpg",
-    "year": 2024,
-    "price": 900000000,
-    "priceFormatted": "900 triệu",
-    "category": "Bán tải",
-    "brand": "Ford",
-    "specs": {
-      "engine": "2.0L EcoBlue",
-      "power": "170 HP",
-      "gearbox": "10AT",
-      "acceleration": "9.8s",
-      "topSpeed": "195 km/h",
-      "fuelConsumption": "7.2 L/100km"
-    },
-    "gallery": [
-      "/cars/ranger.jpg"
-    ],
-    "description": "Bán tải mạnh mẽ, thiết kế thể thao với công nghệ tiên tiến.",
-    "features": [
-      "Động cơ EcoBlue mạnh mẽ",
-      "Cầu chủ động Intelligent Driveline",
-      "Hệ thống treo độc lập",
-      "Ghế da chỉnh điện",
-      "Công nghệ FordPass"
-    ]
-  },
-  {
-    "name": "Honda Civic",
-    "slug": "honda-civic",
-    "image": "/cars/HondaCivic/front.jpg",
-    "year": 2023,
-    "price": 800000000,
-    "priceFormatted": "800 triệu",
-    "category": "Sedan",
-    "brand": "Honda",
-    "specs": {
-      "engine": "1.5L Turbo",
-      "power": "182 HP",
+      "engine": "xăng 1.5 L",
+      "power": "106–107 HP",
       "gearbox": "CVT",
-      "acceleration": "7.8s",
-      "topSpeed": "210 km/h",
-      "fuelConsumption": "6.0 L/100km"
+      "acceleration": "6.4 giây",
+      "topSpeed": "170 km/h",
+      "fuelConsumption": "5.8 - 6.0 lít/100 km"
     },
     "gallery": [
-      "/cars/HondaCivic/front.jpg",
-      "/cars/HondaCivic/rear.jpg",
-      "/cars/HondaCivic/side.jpg"
+      "/cars/Toyota/Vios_2017_299/Front.jpg",
+      "/cars/Toyota/Vios_2017_299/frontside.jpg",
+      "/cars/Toyota/Vios_2017_299/side.jpg",
+      "/cars/Toyota/Vios_2017_299/rear.jpg",
+      "/cars/Toyota/Vios_2017_299/banhxe.jpg",
+      "/cars/Toyota/Vios_2017_299/volang.jpg",
+      "/cars/Toyota/Vios_2017_299/noithattruoc.jpg",
+      "/cars/Toyota/Vios_2017_299/noithatsau.jpg",
+      "/cars/Toyota/Vios_2017_299/may.jpg"
     ],
-    "description": "Sedan thể thao Honda Civic với thiết kế hiện đại, tiết kiệm nhiên liệu.",
     "features": [
-      "Động cơ Turbo 1.5L",
-      "Hộp số CVT mượt mà",
-      "Hệ thống Honda Sensing",
-      "Cửa sổ trời toàn cảnh",
-      "Android Auto & Apple CarPlay"
+      "Màn hình giải trí 7″ hỗ trợ Bluetooth/USB/AUX",
+      "Phanh ABS/EBD/BA hỗ trợ an toàn phanh",
+      "Túi khí đôi phía trước, hệ thống ổn định thân xe điện tử VSC",
+      "Camera lùi / cảm biến lùi ở bản cao hơn giúp đỗ xe an toàn."
     ]
   },
   {
-    "name": "Hyundai Tucson",
-    "slug": "hyundai-tucson",
-    "image": "/cars/Tucson/front.jpg",
-    "year": 2024,
-    "price": 1000000000,
-    "priceFormatted": "1.0 tỷ",
+    "name": "Suzuki Ertiga",
+    "slug": "suzuki-ertiga-2020",
+    "image": "/cars/Suzuki/Etiga_2020_390/main.jpg",
+    "year": 2020,
+    "price": 3900000,
+    "priceFormatted": "390 triệu",
     "category": "SUV",
-    "brand": "Hyundai",
+    "brand": "Suzuki",
+    "description": "Suzuki Ertiga Sport 2020, MPV 7 chỗ lý tưởng cho gia đình.\nSuzuki Ertiga Sport 2020 mang dáng MPV với thiết kế gọn gàng, khí động học, phù hợp cả nhu cầu gia đình lẫn chạy dịch vụ. Nội thất thoáng đãng cho 7 người lớn, không gian khoang hành lý linh hoạt khi gập ghế sau.",
     "specs": {
-      "engine": "2.0L Turbo",
-      "power": "245 HP",
-      "gearbox": "8AT",
-      "acceleration": "7.2s",
-      "topSpeed": "215 km/h",
-      "fuelConsumption": "7.8 L/100km"
-    },
-    "gallery": [
-      "/cars/Tucson/front.jpg",
-      "/cars/Tucson/side.jpg",
-      "/cars/Tucson/inside.jpg"
-    ],
-    "description": "SUV compact Hyundai Tucson với thiết kế hiện đại, công nghệ an toàn hàng đầu.",
-    "features": [
-      "Hệ thống an toàn SmartSense",
-      "Nội thất hiện đại",
-      "Động cơ Turbo mạnh mẽ",
-      "Treo độc lập 4 bánh",
-      "Cảm biến thích ứng"
-    ]
-  },
-  {
-    "name": "Kia Sorento",
-    "slug": "kia-sorento",
-    "image": "/cars/KiaSorento/front.jpg",
-    "year": 2024,
-    "price": 1150000000,
-    "priceFormatted": "1.15 tỷ",
-    "category": "SUV",
-    "brand": "Kia",
-    "specs": {
-      "engine": "2.2L Turbo Diesel",
-      "power": "200 HP",
-      "gearbox": "8AT",
-      "acceleration": "8.5s",
-      "topSpeed": "200 km/h",
-      "fuelConsumption": "7.0 L/100km"
-    },
-    "gallery": [
-      "/cars/KiaSorento/front.jpg",
-      "/cars/KiaSorento/inside.jpg",
-      "/cars/KiaSorento/rear.jpg"
-    ],
-    "description": "SUV 7 chỗ Kia Sorento với thiết kế sang trọng, nội thất rộng rãi.",
-    "features": [
-      "7 chỗ ngồi với hàng ghế giữa có thể xếp gọn",
-      "Động cơ Diesel Turbo tiết kiệm",
-      "Hệ thống điều khiển hành trình thích ứng",
-      "Cửa cốp tự động",
-      "Hệ thống âm thanh Bose"
-    ]
-  },
-  {
-    "name": "Honda CRV",
-    "slug": "honda-crv",
-    "image": "/cars/HondaCRV/main.jpg",
-    "year": 2026,
-    "price": 1200000000,
-    "priceFormatted": "1.2 Tỷ",
-    "category": "SUV",
-    "brand": "Honda",
-    "description": "SUV 7 chỗ mạnh mẽ, bền bỉ và phổ biến tại Việt Nam. Lý tưởng cho gia đình lớn.",
-    "specs": {
-      "engine": "2.0L",
-      "power": "255 HP",
-      "gearbox": "9AT",
+      "engine": "xăng 1.5 L",
+      "power": "~103 HP",
+      "gearbox": "4AT",
       "acceleration": "6.3s",
-      "topSpeed": "250 km/h",
-      "fuelConsumption": "6.5 L/100km"
+      "topSpeed": "175 – 180 km/h",
+      "fuelConsumption": "5.95–6.11 L/100 km"
     },
     "gallery": [
-      "/cars/HondaCRV/main.jpg",
-      "/cars/HondaCRV/front.jpg",
-      "/cars/HondaCRV/Side.jpg"
+      "/cars/Suzuki/Etiga_2020_390/main.jpg",
+      "/cars/Suzuki/Etiga_2020_390/front.jpg",
+      "/cars/Suzuki/Etiga_2020_390/siderear.jpg",
+      "/cars/Suzuki/Etiga_2020_390/rear.jpg",
+      "/cars/Suzuki/Etiga_2020_390/noithat.jpg",
+      "/cars/Suzuki/Etiga_2020_390/noithatgiua.jpg",
+      "/cars/Suzuki/Etiga_2020_390/noithattruoc.jpg"
     ],
     "features": [
-      "Hệ thống an toàn ADAS",
-      "Nội thất da Nappa",
-      "Cửa sổ trời toàn cảnh",
-      "Hệ thống âm thanh Burmester"
+      "Cân bằng điện tử (ESP)",
+      "Hỗ trợ khởi hành ngang dốc (HHC)",
+      "Phanh ABS + EBD, ít nhất 2 túi khí, cảm biến lùi"
+    ]
+  },
+  {
+    "name": "Ford EcoSport",
+    "slug": "ford-ecosport-2014",
+    "image": "/cars/Ford/Ecosport_2014_300/main.jpg",
+    "year": 2014,
+    "price": 3000000,
+    "priceFormatted": "300 triệu",
+    "category": "SUV",
+    "brand": "Ford",
+    "description": "Ford EcoSport 2014 — SUV đô thị gọn gàng, năng động & đầy ắp tính ứng dụng! Bạn muốn một chiếc SUV nhỏ gọn nhưng vận hành chắc chắn, phù hợp phố xá đông đúc lẫn những chuyến đi xa cuối tuần? Ford EcoSport 2014 là lựa chọn thú vị trong phân khúc SUV cỡ B, nổi bật với thiết kế mạnh mẽ, độ linh hoạt cao và cảm giác lái đầm chắc\n",
+    "specs": {
+      "engine": "xăng 1.5L Ti-VCT",
+      "power": "110–112 HP",
+      "gearbox": "6AT",
+      "acceleration": "13.3–14.1 s",
+      "topSpeed": "170–172 km/h",
+      "fuelConsumption": "6.3 L/100 km"
+    },
+    "gallery": [
+      "/cars/Ford/Ecosport_2014_300/main.jpg",
+      "/cars/Ford/Ecosport_2014_300/rear.jpg",
+      "/cars/Ford/Ecosport_2014_300/sidefront.jpg",
+      "/cars/Ford/Ecosport_2014_300/canso.jpg",
+      "/cars/Ford/Ecosport_2014_300/volang.jpg",
+      "/cars/Ford/Ecosport_2014_300/ghetruoc.jpg",
+      "/cars/Ford/Ecosport_2014_300/ghesau.jpg",
+      "/cars/Ford/Ecosport_2014_300/copsau.jpg"
+    ],
+    "features": [
+      "Hệ thống phanh ABS + EBD",
+      "6–7 túi khí tuỳ phiên bản",
+      "Hỗ trợ khởi hành ngang dốc",
+      "Cảm biến lùi và camera lùi tùy chọn"
+    ]
+  },
+  {
+    "name": "Hyundai Azera Limited ",
+    "slug": "hyundai-azera-2008",
+    "image": "/cars/Hyundai/Azera_2008_195/side.jpg",
+    "year": 2008,
+    "price": 195000000,
+    "priceFormatted": "195 triệu",
+    "category": "Sedan",
+    "brand": "Hyundai",
+    "description": "Hyundai Azera Limited 2008 — Sedan hạng lớn sang trọng, mạnh mẽ và thoải mái. Xe có thiết kế ngoại thất lịch lãm với đường nét mềm mại nhưng vẫn toát lên sự hiện đại và sang trọng đặc trưng của sedan cỡ lớn. Cabin rộng rãi cho cả người lái và hành khách sau, cùng chất liệu nội thất cao cấp ở các phiên bản cao cấp Limited.",
+    "specs": {
+      "engine": "3.8 L V6",
+      "power": "263 HP",
+      "gearbox": "5AT",
+      "acceleration": "7–8 giây",
+      "topSpeed": "trên 180 km/h",
+      "fuelConsumption": "11.8–11.2 L/100 km"
+    },
+    "gallery": [
+      "/cars/Hyundai/Azera_2008_195/main.jpg",
+      "/cars/Hyundai/Azera_2008_195/rear.jpg",
+      "/cars/Hyundai/Azera_2008_195/side.jpg",
+      "/cars/Hyundai/Azera_2008_195/vplang.jpg",
+      "/cars/Hyundai/Azera_2008_195/noithatsau.jpg",
+      "/cars/Hyundai/Azera_2008_195/noithattruoc.jpg"
+    ],
+    "features": [
+      "Hệ thống phanh ABS + EBD",
+      "Stability Control & Traction Control giúp giữ lái ổn định",
+      "Hệ thống túi khí nhiều vị trí (trong đó có túi khí rèm)",
+      "Ghế bọc da cao cấp với chỉnh điện và cả ghế trước sưởi ấm",
+      "Hệ thống điều hoà tự động 2 vùng",
+      "Hệ thống âm thanh premium"
+    ]
+  },
+  {
+    "name": "Chevrolet Cruze",
+    "slug": "chevrolet-cruze-2015-ltz",
+    "image": "/cars/Chevrolet/Cruze_2015_268/side.jpg",
+    "year": 2015,
+    "price": 268000000,
+    "priceFormatted": "268 triệu",
+    "category": "Sedan",
+    "brand": "Chevrolet",
+    "description": "Chiếc Cruze 2015 LTZ là phiên bản cao cấp nhất trong dòng Cruze thế hệ đầu (2011–2015), mang lại trải nghiệm lái dễ chịu, mức tiêu hao nhiên liệu hợp lý và tiện nghi đáng nể trong tầm giá xe đã qua sử dụng. Đây là lựa chọn thích hợp cho người cần xe gia đình/đi lại hàng ngày nhưng vẫn đầy đủ tiện nghi.",
+    "specs": {
+      "engine": "xăng 1.4L turbo",
+      "power": "138 HP",
+      "gearbox": "6AT",
+      "acceleration": "10 giây",
+      "topSpeed": "198 km/h",
+      "fuelConsumption": "7.8 L/100 km"
+    },
+    "gallery": [
+      "/cars/Chevrolet/Cruze_2015_268/main.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/sidefront.jpg.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/side.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/rear.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/noithattruoc.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/ghetruoc.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/ghesau.jpg",
+      "/cars/Chevrolet/Cruze_2015_268/may.jpg"
+    ],
+    "features": [
+      "Ghế lái chỉnh điện / hỗ trợ nhớ vị trí",
+      "Điều hoà tự động 2 vùng với cửa gió sau",
+      "Cửa sổ trời chỉnh điện tạo không gian thoáng đãng",
+      "Vô lăng tích hợp điều khiển âm thanh & cruise control",
+      "ABS + EBD + BA — phanh an toàn",
+      "4 túi khí an toàn cơ bản (ghế trước, hai bên)",
+      "Cảnh báo lùi và cảm biến hỗ trợ"
+    ]
+  },
+  {
+    "name": "Ford EcoSport",
+    "slug": "ford-ecosport-2016-titanium",
+    "image": "/cars/Ford/Ecosport_2016_315/siderear.jpg",
+    "year": 2016,
+    "price": 315000000,
+    "priceFormatted": "315 triệu",
+    "category": "SUV",
+    "brand": "Ford",
+    "description": "Ford EcoSport 2016 Titanium – SUV đô thị 5 chỗ với trang bị đầy đủ là một trong những mẫu xe gầm cao bán chạy nhất trong phân khúc SUV cỡ B tại Việt Nam, nổi bật với thiết kế gọn gàng, dễ lái trong nội thành và khả năng vận hành ổn định trên nhiều địa hình nhẹ.",
+    "specs": {
+      "engine": "xăng 1.5 L Ti-VCT",
+      "power": "110–112 HP",
+      "gearbox": "6AT",
+      "acceleration": "14.1 s",
+      "topSpeed": "172 km/h",
+      "fuelConsumption": "6.3 L/100 km"
+    },
+    "gallery": [
+      "/cars/Ford/Ecosport_2016_315/mainnew.jpg",
+      "/cars/Ford/Ecosport_2016_315/frontside.jpg",
+      "/cars/Ford/Ecosport_2016_315/siderear.jpg",
+      "/cars/Ford/Ecosport_2016_315/rear.jpg",
+      "/cars/Ford/Ecosport_2016_315/noithattruoc.jpg",
+      "/cars/Ford/Ecosport_2016_315/ghetruoc.jpg",
+      "/cars/Ford/Ecosport_2016_315/ghesau.jpg",
+      "/cars/Ford/Ecosport_2016_315/may.jpg"
+    ],
+    "features": [
+      "ABS + EBD + ESP (cân bằng điện tử)",
+      "HLA (trợ lực khởi hành ngang dốc)",
+      "7 túi khí",
+      "Cảm biến lùi, trợ lực lái điện tử",
+      "Cửa sổ trời (sunroof)"
     ]
   }
 ]
