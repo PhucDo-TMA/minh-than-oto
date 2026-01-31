@@ -33,7 +33,8 @@
       "Phanh ABS/EBD/BA hỗ trợ an toàn phanh",
       "Túi khí đôi phía trước, hệ thống ổn định thân xe điện tử VSC",
       "Camera lùi / cảm biến lùi ở bản cao hơn giúp đỗ xe an toàn."
-    ]
+    ],
+    "order": 1
   },
   {
     "name": "Suzuki Ertiga",
@@ -66,7 +67,8 @@
       "Cân bằng điện tử (ESP)",
       "Hỗ trợ khởi hành ngang dốc (HHC)",
       "Phanh ABS + EBD, ít nhất 2 túi khí, cảm biến lùi"
-    ]
+    ],
+    "order": 2
   },
   {
     "name": "Ford EcoSport",
@@ -101,7 +103,8 @@
       "6–7 túi khí tuỳ phiên bản",
       "Hỗ trợ khởi hành ngang dốc",
       "Cảm biến lùi và camera lùi tùy chọn"
-    ]
+    ],
+    "order": 3
   },
   {
     "name": "Hyundai Azera Limited ",
@@ -136,7 +139,8 @@
       "Ghế bọc da cao cấp với chỉnh điện và cả ghế trước sưởi ấm",
       "Hệ thống điều hoà tự động 2 vùng",
       "Hệ thống âm thanh premium"
-    ]
+    ],
+    "order": 4
   },
   {
     "name": "Chevrolet Cruze",
@@ -174,7 +178,8 @@
       "ABS + EBD + BA — phanh an toàn",
       "4 túi khí an toàn cơ bản (ghế trước, hai bên)",
       "Cảnh báo lùi và cảm biến hỗ trợ"
-    ]
+    ],
+    "order": 5
   },
   {
     "name": "Ford EcoSport",
@@ -210,7 +215,8 @@
       "7 túi khí",
       "Cảm biến lùi, trợ lực lái điện tử",
       "Cửa sổ trời (sunroof)"
-    ]
+    ],
+    "order": 6
   },
   {
     "name": "Chevrolet Cruze",
@@ -246,7 +252,8 @@
       "Điều hòa tự động hai vùng",
       "ABS + EBD + BA",
       "Cảm biến lùi, Cảnh báo an toàn khi dừng/đỗ"
-    ]
+    ],
+    "order": 7
   },
   {
     "name": "Toyota Camry",
@@ -281,7 +288,8 @@
       "ABS, EBD, Brake Assist – hỗ trợ phanh hiệu quả",
       "Túi khí đa vị trí cho hành khách trước và sau",
       "Đạt 5 sao NHTSA frontal & side crash tests tại Mỹ – mức an toàn rất tốt thời đó"
-    ]
+    ],
+    "order": 8
   },
   {
     "name": "Honda City RS",
@@ -317,7 +325,8 @@
       "Cân bằng điện tử (VSA)",
       "Khung xe ACE™ cấu trúc an toàn cao",
       "Hệ thống túi khí đa điểm"
-    ]
+    ],
+    "order": 9
   },
   {
     "name": "Mazda 3 2018 1.5 AT",
@@ -355,7 +364,8 @@
       "Cân bằng điện tử ESP",
       "Hỗ trợ khởi hành ngang dốc HAC",
       "Camera lùi & cảm biến lùi"
-    ]
+    ],
+    "order": 11
   },
   {
     "name": "Mazda3 2020 Premium",
@@ -394,7 +404,8 @@
       "Cân bằng điện tử (ESP)",
       "Trợ lực khởi hành ngang dốc (HLA)",
       "Cảm biến lùi + Camera lùi"
-    ]
+    ],
+    "order": 12
   },
   {
     "name": "Ford Ecosport 2019",
@@ -430,7 +441,8 @@
       "Cửa sổ trời giúp không gian thoáng đãng hơn",
       "ABS + EBD + BA – hệ thống chống bó cứng phanh và phân phối lực phanh điện tử",
       "Cân bằng điện tử ESP & hill start assist"
-    ]
+    ],
+    "order": 13
   },
   {
     "name": "Mitsubishi Xpander Cross 2021",
@@ -465,7 +477,8 @@
       "Cân bằng điện tử ASC, kiểm soát lực kéo TCL, hỗ trợ khởi hành ngang dốc HSA",
       "Cảm biến lùi + Camera lùi – hỗ trợ đỗ xe an toàn hơn",
       "Túi khí đa điểm – gia tăng bảo vệ hành khách"
-    ]
+    ],
+    "order": 10
   },
   {
     "name": "Toyota Innova E 2012",
@@ -501,6 +514,7 @@
       "Trợ lực phanh khẩn cấp (EBA)",
       "Cảm biến lùi / đèn sương mù",
       "Không gian rộng – 7 người dễ chịu"
-    ]
+    ],
+    "order": 14
   }
 ]

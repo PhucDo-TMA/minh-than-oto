@@ -12,9 +12,11 @@ export default function Home() {
 
   // Filter cars based on search
   const filteredCars = useMemo(() => {
-    return cars.filter((car) =>
-      car.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    return cars
+      .filter((car) =>
+        car.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+      .sort((a, b) => (a.order || 0) - (b.order || 0));
   }, [searchQuery]);
 
   // Calculate pagination

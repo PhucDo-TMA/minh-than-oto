@@ -45,6 +45,8 @@ export default function AdminPage() {
     features: "",
   });
   const [editing, setEditing] = useState<string | null>(null);
+  const [draggedItem, setDraggedItem] = useState<string | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
 
   useEffect(() => {
     load();
@@ -173,6 +175,64 @@ export default function AdminPage() {
     if (!res.ok) return alert("Xóa thất bại");
     load();
   }
+
+  const handleDragStart = (slug: string) => {
+    setDraggedItem(slug);
+    setDragOverIndex(null);
+  };
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    setDragOverIndex(index);
+  };
+
+  const handleDragLeave = () => {
+    setDragOverIndex(null);
+  };
+
+  const handleDrop = async (targetSlug: string) => {
+    if (!draggedItem || draggedItem === targetSlug) {
+      setDraggedItem(null);
+      setDragOverIndex(null);
+      return;
+    }
+
+    const draggedIdx = cars.findIndex((c) => c.slug === draggedItem);
+    const targetIdx = cars.findIndex((c) => c.slug === targetSlug);
+
+    if (draggedIdx === -1 || targetIdx === -1) {
+      setDraggedItem(null);
+      setDragOverIndex(null);
+      return;
+    }
+
+    // Create new array with reordered items
+    const newCars = [...cars];
+    const draggedCar = newCars[draggedIdx];
+    newCars.splice(draggedIdx, 1);
+    newCars.splice(targetIdx, 0, draggedCar);
+
+    // Update order field for all cars
+    const updatedCars = newCars.map((car, index) => ({
+      ...car,
+      order: index + 1,
+    }));
+
+    setCars(updatedCars);
+
+    // Save each car's new order to backend
+    for (const car of updatedCars) {
+      await fetch(`/api/cars?slug=${car.slug}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(car),
+      });
+    }
+
+    setDraggedItem(null);
+    setDragOverIndex(null);
+  };
 
   return (
     <div className="admin-page">
@@ -305,9 +365,17 @@ export default function AdminPage() {
                 </tr>
               </thead>
               <tbody>
-                {cars.map((c) => (
-                  <tr key={c.slug}>
-                    <td>{c.name}</td>
+                {cars.map((c, index) => (
+                  <tr
+                    key={c.slug}
+                    draggable
+                    onDragStart={() => handleDragStart(c.slug)}
+                    onDragOver={(e) => handleDragOver(e, index)}
+                    onDragLeave={handleDragLeave}
+                    onDrop={() => handleDrop(c.slug)}
+                    className={`draggable-row ${draggedItem === c.slug ? "dragging" : ""} ${dragOverIndex === index ? "drag-over" : ""}`}
+                  >
+                    <td>📍 {c.name}</td>
                     <td>{c.brand}</td>
                     <td>{c.priceFormatted}</td>
                     <td>{c.year}</td>
@@ -456,6 +524,23 @@ export default function AdminPage() {
         }
         .cars-table tr:hover {
           background: #f9fafb;
+        }
+        .draggable-row {
+          cursor: move;
+          user-select: none;
+          transition: all 0.2s ease;
+        }
+        .draggable-row:hover {
+          background: #eff6ff;
+        }
+        .draggable-row.dragging {
+          opacity: 0.5;
+          background: #dbeafe;
+        }
+        .draggable-row.drag-over {
+          background: #cffafe;
+          box-shadow: inset 0 -3px 0 #06b6d4;
+          border-bottom: 3px solid #06b6d4;
         }
         .actions {
           display: flex;
