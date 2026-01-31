@@ -356,5 +356,151 @@
       "Hỗ trợ khởi hành ngang dốc HAC",
       "Camera lùi & cảm biến lùi"
     ]
+  },
+  {
+    "name": "Mazda3 2020 Premium",
+    "slug": "Mazda3-2020-Premium",
+    "image": "/cars/Mazda/Mazda3_2020_480/main.jpg",
+    "year": 2020,
+    "price": 0,
+    "priceFormatted": "480 triệu",
+    "category": "Sedan",
+    "brand": "Mazda",
+    "description": "Mazda3 2020 Premium — Sedan hạng C vừa sang trọng, vừa thú vị khi lái. Nếu bạn đang tìm một chiếc sedan thiết kế ấn tượng, cảm giác lái tinh tế và trang bị đầy đủ, thì Mazda3 2020 Premium là một trong những lựa chọn nổi bật trong phân khúc C tại Việt Nam — thể hiện rõ phong cách “premium” của Mazda ở cả ngoại hình, tiện nghi và vận hành.",
+    "specs": {
+      "engine": "1.5 L SkyActiv-G",
+      "power": "110 HP",
+      "gearbox": "6AT",
+      "acceleration": "11–12 giây",
+      "topSpeed": "180 km/h",
+      "fuelConsumption": "180 km/h"
+    },
+    "gallery": [
+      "/cars/Mazda/Mazda3_2020_480/main.jpg",
+      "/cars/Mazda/Mazda3_2020_480/sidefront.jpg",
+      "/cars/Mazda/Mazda3_2020_480/siderear.jpg",
+      "/cars/Mazda/Mazda3_2020_480/rear.jpg",
+      "/cars/Mazda/Mazda3_2020_480/volang.jpg",
+      "/cars/Mazda/Mazda3_2020_480/ghetruoc.jpg",
+      "/cars/Mazda/Mazda3_2020_480/ghesau.jpg",
+      "/cars/Mazda/Mazda3_2020_480/may.jpg"
+    ],
+    "features": [
+      "Cửa sổ trời – tạo không gian thoáng đãng",
+      "Cửa sổ trời – tạo không gian thoáng đãng",
+      "Hệ thống đèn pha tự động & gạt mưa tự động",
+      "Chế độ lái Sport + G-Vectoring Control Plus tăng độ nhạy lái",
+      "Hệ thống an toàn cơ bản đầy đủ như ABS/EBD/BA",
+      "Cân bằng điện tử (ESP)",
+      "Trợ lực khởi hành ngang dốc (HLA)",
+      "Cảm biến lùi + Camera lùi"
+    ]
+  },
+  {
+    "name": "Ford Ecosport 2019",
+    "slug": "Ford-Ecosport-2019-cam",
+    "image": "/cars/Ford/Ecosport_2019_375/main.jpg",
+    "year": 2019,
+    "price": 0,
+    "priceFormatted": "375 triệu",
+    "category": "Sedan",
+    "brand": "Ford",
+    "description": "Ford EcoSport 2019 – Bản 1.0 Turbo EcoBoost. Một trong những lựa chọn SUV đô thị nhỏ gọn nhưng đầy đủ tiện nghi và tiết kiệm nhiên liệu — phù hợp chạy phố, đi làm hằng ngày hoặc đi cuối tuần.",
+    "specs": {
+      "engine": "1.0 L Turbo",
+      "power": "123 HP",
+      "gearbox": "6AT",
+      "acceleration": "14.1 s",
+      "topSpeed": "172 km/h",
+      "fuelConsumption": "5.9 L/100 km"
+    },
+    "gallery": [
+      "/cars/Ford/Ecosport_2019_375/main.jpg",
+      "/cars/Ford/Ecosport_2019_375/sidefront.jpg",
+      "/cars/Ford/Ecosport_2019_375/siderear.jpg",
+      "/cars/Ford/Ecosport_2019_375/rear.jpg",
+      "/cars/Ford/Ecosport_2019_375/noithat.jpg",
+      "/cars/Ford/Ecosport_2019_375/ghetruoc.jpg",
+      "/cars/Ford/Ecosport_2019_375/ghesau.jpg",
+      "/cars/Ford/Ecosport_2019_375/mam.jpg"
+    ],
+    "features": [
+      "Camera lùi & cảm biến đỗ xe cho hỗ trợ khi vào chuồng hẹp",
+      "Gương chiếu hậu gập điện / đèn sương mù / tự động bật đèn",
+      "Cửa sổ trời giúp không gian thoáng đãng hơn",
+      "ABS + EBD + BA – hệ thống chống bó cứng phanh và phân phối lực phanh điện tử",
+      "Cân bằng điện tử ESP & hill start assist"
+    ]
+  },
+  {
+    "name": "Mitsubishi Xpander Cross 2021",
+    "slug": "Mitsubishi-Xpander-Cross-2021",
+    "image": "/cars/Mitbishi/Xpander_2021_470/main.jpg",
+    "year": 2021,
+    "price": 0,
+    "priceFormatted": "470 triệu",
+    "category": "SUV",
+    "brand": "Mitsubishi",
+    "description": "Mitsubishi Xpander Cross 2021 — SUV-MPV 7 chỗ đa dụng phong cách “xứ sở mặt trời mọc”. Dòng Xpander Cross 2021 là phiên bản lai giữa SUV và MPV 7 chỗ được đông đảo khách hàng yêu thích bởi ngoại hình mạnh mẽ, không gian rộng rãi, vận hành linh hoạt và độ tiện nghi tốt trong tầm giá, phù hợp gia đình, di chuyển hằng ngày và cả những chuyến đi xa.",
+    "specs": {
+      "engine": "xăng 1.5 L",
+      "power": "104 HP",
+      "gearbox": "4AT",
+      "acceleration": "12–13 s",
+      "topSpeed": "170 km/h",
+      "fuelConsumption": "170 km/h"
+    },
+    "gallery": [
+      "/cars/Mitbishi/Xpander_2021_470/main.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/sidefront.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/siderear.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/rear.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/ghetruoc.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/ghesau.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/noithat.jpg",
+      "/cars/Mitbishi/Xpander_2021_470/may.jpg"
+    ],
+    "features": [
+      "ABS + EBD + BA – phanh an toàn chuẩn",
+      "Cân bằng điện tử ASC, kiểm soát lực kéo TCL, hỗ trợ khởi hành ngang dốc HSA",
+      "Cảm biến lùi + Camera lùi – hỗ trợ đỗ xe an toàn hơn",
+      "Túi khí đa điểm – gia tăng bảo vệ hành khách"
+    ]
+  },
+  {
+    "name": "Toyota Innova E 2012",
+    "slug": "Toyota-Innova-E-2012",
+    "image": "/cars/Toyota/Innova_2012_235/main.jpg",
+    "year": 2012,
+    "price": 0,
+    "priceFormatted": "235 triệu",
+    "category": "SUV",
+    "brand": "Toyota",
+    "description": "Toyota Innova E 2012 bản số sàn (MT) — mẫu MPV 7 chỗ rất được ưa chuộng tại Việt Nam nhờ độ bền, dễ sử dụng và chi phí vận hành thấp. ",
+    "specs": {
+      "engine": "xăng 2.0L",
+      "power": "138 HP",
+      "gearbox": "5MT",
+      "acceleration": "10s",
+      "topSpeed": "170–200 km/h",
+      "fuelConsumption": "170–200 km/h"
+    },
+    "gallery": [
+      "/cars/Toyota/Innova_2012_235/main.jpg",
+      "/cars/Toyota/Innova_2012_235/sidefront.jpg",
+      "/cars/Toyota/Innova_2012_235/siderear.jpg",
+      "/cars/Toyota/Innova_2012_235/rear.jpg",
+      "/cars/Toyota/Innova_2012_235/noithat.jpg",
+      "/cars/Toyota/Innova_2012_235/gehtruoc.jpg",
+      "/cars/Toyota/Innova_2012_235/gehsau.jpg",
+      "/cars/Toyota/Innova_2012_235/may.jpg"
+    ],
+    "features": [
+      "Điều hòa: Hệ thống điều hoà 3 vùng (trước + sau)",
+      "Phanh ABS – chống bó cứng phanh",
+      "Trợ lực phanh khẩn cấp (EBA)",
+      "Cảm biến lùi / đèn sương mù",
+      "Không gian rộng – 7 người dễ chịu"
+    ]
   }
 ]
