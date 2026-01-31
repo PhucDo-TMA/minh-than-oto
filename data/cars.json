@@ -211,5 +211,150 @@
       "Cảm biến lùi, trợ lực lái điện tử",
       "Cửa sổ trời (sunroof)"
     ]
+  },
+  {
+    "name": "Chevrolet Cruze",
+    "slug": "chevrolet-cruze-2016-san",
+    "image": "/cars/Chevrolet/Cruze_2016_230/main.jpg",
+    "year": 2016,
+    "price": 230,
+    "priceFormatted": "230 triệu",
+    "category": "Sedan",
+    "brand": "Chevrolet",
+    "description": "Chevrolet Cruze 2016 phiên bản số sàn — Lựa chọn mạnh mẽ, lành tính & tiết kiệm cho người lái thích chủ động! Nếu bạn thích cảm giác tự lái, kiểm soát xe tối đa và chi phí vận hành thấp, thì Chevrolet Cruze 2016 số sàn (MT) là một trong những lựa chọn hấp dẫn trong phân khúc sedan cỡ C đã qua sử dụng.",
+    "specs": {
+      "engine": "1.4 L Turbo",
+      "power": "138 HP",
+      "gearbox": "6MT",
+      "acceleration": "10s",
+      "topSpeed": "190–200 km/h",
+      "fuelConsumption": "7.3–7.8 L/100 km"
+    },
+    "gallery": [
+      "/cars/Chevrolet/Cruze_2016_230/main.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/sidefront.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/side.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/rear.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/noithat.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/ghetruoc.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/ghesau.jpg",
+      "/cars/Chevrolet/Cruze_2016_230/may.jpg"
+    ],
+    "features": [
+      "Cửa sổ trời chỉnh điện",
+      "Cruise Control — giữ tốc độ khi đi cao tốc",
+      "Điều hòa tự động hai vùng",
+      "ABS + EBD + BA",
+      "Cảm biến lùi, Cảnh báo an toàn khi dừng/đỗ"
+    ]
+  },
+  {
+    "name": "Toyota Camry",
+    "slug": "toyota-camry-2008-my",
+    "image": "/cars/Toyota/Camry_2008_375/main.jpg",
+    "year": 2008,
+    "price": 375,
+    "priceFormatted": "375 triệu",
+    "category": "Sedan",
+    "brand": "Toyota",
+    "description": "Toyota Camry 2008 – Sedan cỡ trung “huyền thoại” của Mỹ: bền bỉ, êm ái và toàn diện cho gia đình. Là một trong những mẫu sedan đông khách nhất tại thị trường Bắc Mỹ bởi sự ổn định, chi phí nuôi xe thấp và cảm giác lái nhẹ nhàng, phù hợp cả việc đi lại hằng ngày lẫn những chuyến đi đường dài.",
+    "specs": {
+      "engine": "2.4 L",
+      "power": "160 HP",
+      "gearbox": "5AT",
+      "acceleration": "8.9 giây",
+      "topSpeed": "200 km/h",
+      "fuelConsumption": "9,4 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Camry_2008_375/main.jpg",
+      "/cars/Toyota/Camry_2008_375/front.jpg",
+      "/cars/Toyota/Camry_2008_375/rear.jpg",
+      "/cars/Toyota/Camry_2008_375/noithat.jpg",
+      "/cars/Toyota/Camry_2008_375/ghetruoc.jpg",
+      "/cars/Toyota/Camry_2008_375/ghesau.jpg",
+      "/cars/Toyota/Camry_2008_375/cop.jpg",
+      "/cars/Toyota/Camry_2008_375/may.jpg"
+    ],
+    "features": [
+      "Cruise control — hỗ trợ đi xa thoải mái",
+      "ABS, EBD, Brake Assist – hỗ trợ phanh hiệu quả",
+      "Túi khí đa vị trí cho hành khách trước và sau",
+      "Đạt 5 sao NHTSA frontal & side crash tests tại Mỹ – mức an toàn rất tốt thời đó"
+    ]
+  },
+  {
+    "name": "Honda City RS",
+    "slug": "Honda-City-RS-2023",
+    "image": "/cars/Honda/City_2023_495/main.jpg",
+    "year": 2023,
+    "price": 4,
+    "priceFormatted": "495 triệu",
+    "category": "Sedan",
+    "brand": "Honda",
+    "description": "Honda City RS 2023 – Phiên bản RS trẻ trung, đầy đủ công nghệ, đậm chất “đẳng cấp sedan hạng B” cho cuộc sống hiện đại! Nếu bạn đang tìm một chiếc sedan nhỏ gọn, sang trọng, tiết kiệm nhiên liệu và đầy đủ tiện nghi, thì Honda City RS 2023 là ứng viên đáng cân nhắc hàng đầu trong phân khúc B tại Việt Nam",
+    "specs": {
+      "engine": "1.5 L",
+      "power": "119 HP",
+      "gearbox": "CVT",
+      "acceleration": "10.4 s",
+      "topSpeed": "195 km/h",
+      "fuelConsumption": "5.6 L/100 km"
+    },
+    "gallery": [
+      "/cars/Honda/City_2023_495/main.jpg",
+      "/cars/Honda/City_2023_495/sidefront.jpg",
+      "/cars/Honda/City_2023_495/side.jpg",
+      "/cars/Honda/City_2023_495/rear.jpg",
+      "/cars/Honda/City_2023_495/noithat.jpg",
+      "/cars/Honda/City_2023_495/ghetruoc.jpg",
+      "/cars/Honda/City_2023_495/ghesau.jpg",
+      "/cars/Honda/City_2023_495/may.jpg"
+    ],
+    "features": [
+      "Cảm biến lùi/Camera lùi – hỗ trợ đậu xe chính xác",
+      "Phanh ABS + EBD + BA",
+      "Cân bằng điện tử (VSA)",
+      "Khung xe ACE™ cấu trúc an toàn cao",
+      "Hệ thống túi khí đa điểm"
+    ]
+  },
+  {
+    "name": "Mazda 3 2018 1.5 AT",
+    "slug": "Mazda-3-2018-1.5-AT",
+    "image": "/cars/Mazda/Mazda3_2018_430/main.jpg",
+    "year": 2018,
+    "price": 0,
+    "priceFormatted": "430 triệu",
+    "category": "Sedan",
+    "brand": "Mazda",
+    "description": "Mazda 3 2018 thuộc thế hệ III facelift được thiết kế theo ngôn ngữ “KODO – Linh hồn của sự chuyển động” — mang vẻ ngoài thể thao, sang trọng và cuốn hút ngay từ cái nhìn đầu tiên.\nXe phù hợp cho gia đình, doanh nhân trẻ và người thích xe đẹp – lái sướng.",
+    "specs": {
+      "engine": "1.5 L SkyActiv-G",
+      "power": "110 HP",
+      "gearbox": "6 AT",
+      "acceleration": "11.7s",
+      "topSpeed": "186 km/h",
+      "fuelConsumption": "5,8 L/100 km"
+    },
+    "gallery": [
+      "/cars/Mazda/Mazda3_2018_430/main.jpg",
+      "/cars/Mazda/Mazda3_2018_430/sidefront.jpg",
+      "/cars/Mazda/Mazda3_2018_430/rear.jpg",
+      "/cars/Mazda/Mazda3_2018_430/cua.jpg",
+      "/cars/Mazda/Mazda3_2018_430/noithat.jpg",
+      "/cars/Mazda/Mazda3_2018_430/ghetruoc.jpg",
+      "/cars/Mazda/Mazda3_2018_430/ghesau.jpg",
+      "/cars/Mazda/Mazda3_2018_430/may.jpg"
+    ],
+    "features": [
+      "Cruise Control – giữ tốc độ an toàn trên cao tốc",
+      "Chế độ lái thể thao Sport Mode – tăng cảm giác lái mạnh mẽ hơn khi cần",
+      "ABS + EBD + BA – phanh an toàn",
+      "Hỗ trợ lực phanh khẩn cấp EBA",
+      "Cân bằng điện tử ESP",
+      "Hỗ trợ khởi hành ngang dốc HAC",
+      "Camera lùi & cảm biến lùi"
+    ]
   }
 ]
