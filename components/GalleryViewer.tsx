@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 interface GalleryViewerProps {
   images: string[];
@@ -169,13 +168,10 @@ export default function GalleryViewer({
           </button>
 
           <div className="main-image" onClick={openLightbox}>
-            <Image
+            <img
               src={displayImage}
               alt={carName}
-              width={700}
-              height={450}
               className="image"
-              priority
             />
           </div>
 
@@ -198,11 +194,9 @@ export default function GalleryViewer({
                 onClick={() => selectImage(idx)}
                 title={`Hình ${idx + 1}`}
               >
-                <Image
+                <img
                   src={img}
                   alt={`${carName} ${idx + 1}`}
-                  width={120}
-                  height={90}
                   className="thumb-image"
                 />
               </button>
@@ -224,36 +218,32 @@ export default function GalleryViewer({
             <button className="lightbox-close" onClick={closeLightbox}>
               ✕
             </button>
+
+            <button
+              className="lightbox-nav lightbox-prev"
+              onClick={goToPrevious}
+              aria-label="Previous image"
+              disabled={isTransitioning}
+            >
+              ◀
+            </button>
             
             <div className="lightbox-image" style={{ opacity: isTransitioning ? 0.3 : 1, transform: `scale(${zoomLevel})`, cursor: zoomLevel < 3 ? 'zoom-in' : 'zoom-out' }} onClick={handleImageClick} onWheel={handleWheel}>
-              <Image
+              <img
                 src={displayImage}
                 alt={carName}
-                width={1200}
-                height={800}
                 className="zoomed-image"
               />
             </div>
 
-            <div className="lightbox-nav-container">
-              <button
-                className="lightbox-nav lightbox-prev"
-                onClick={goToPrevious}
-                aria-label="Previous image"
-                disabled={isTransitioning}
-              >
-                ◀
-              </button>
-              
-              <button
-                className="lightbox-nav lightbox-next"
-                onClick={goToNext}
-                aria-label="Next image"
-                disabled={isTransitioning}
-              >
-                ▶
-              </button>
-            </div>
+            <button
+              className="lightbox-nav lightbox-next"
+              onClick={goToNext}
+              aria-label="Next image"
+              disabled={isTransitioning}
+            >
+              ▶
+            </button>
           </div>
         </div>
       )}
@@ -444,6 +434,18 @@ export default function GalleryViewer({
           transform: scale(0.95);
         }
 
+        .lightbox-content {
+          position: relative;
+          max-width: 95vw;
+          max-height: 95vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1.5rem;
+          touch-action: pan-x;
+          user-select: none;
+        }
+
         .lightbox-nav {
           background: rgba(37, 99, 235, 0.9);
           color: white;
@@ -458,20 +460,31 @@ export default function GalleryViewer({
           display: flex;
           align-items: center;
           justify-content: center;
-          position: static;
-          transform: none;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
           box-shadow: 0 4px 12px rgba(37, 99, 235, 0.6);
+          flex-shrink: 0;
+          z-index: 1000;
+        }
+
+        .lightbox-prev {
+          left: 1rem;
+        }
+
+        .lightbox-next {
+          right: 1rem;
         }
 
         .lightbox-nav:hover {
           background: rgba(37, 99, 235, 1);
           border-color: rgba(255, 255, 255, 1);
-          transform: scale(1.1);
+          transform: translateY(-50%) scale(1.1);
           box-shadow: 0 6px 20px rgba(37, 99, 235, 0.8);
         }
 
         .lightbox-nav:active {
-          transform: scale(0.95);
+          transform: translateY(-50%) scale(0.95);
         }
 
         .lightbox-nav:disabled {
@@ -480,14 +493,11 @@ export default function GalleryViewer({
         }
 
         .lightbox-nav-container {
-          display: flex;
-          gap: 1rem;
-          align-items: center;
-          justify-content: center;
+          display: none;
         }
 
         .lightbox-image {
-          max-width: 80vw;
+          max-width: 90vw;
           max-height: 90vh;
           display: flex;
           align-items: center;
@@ -500,11 +510,10 @@ export default function GalleryViewer({
         }
 
         .zoomed-image {
-          width: auto !important;
-          height: auto !important;
-          max-width: 100%;
-          max-height: 90vh;
+          width: 100%;
+          height: 100%;
           object-fit: contain;
+          display: block;
         }
 
         @media (max-width: 768px) {
@@ -537,13 +546,30 @@ export default function GalleryViewer({
           }
 
           .lightbox-nav {
-            width: 55px;
-            height: 55px;
-            font-size: 1.8rem;
-            padding: 0.5rem;
-            gap: 1rem;
-            opacity: 1;
-            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.7);
+            width: 45px;
+            height: 45px;
+            font-size: 1.2rem;
+            padding: 0.25rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+          }
+
+          .lightbox-prev {
+            left: 0.5rem;
+          }
+
+          .lightbox-next {
+            right: 0.5rem;
+          }
+
+          .lightbox-nav:hover {
+            transform: translateY(-50%) scale(1.1);
+          }
+
+          .lightbox-nav:active {
+            transform: translateY(-50%) scale(0.95);
           }
 
           .lightbox-close {
@@ -555,32 +581,21 @@ export default function GalleryViewer({
           }
 
           .lightbox-content {
-            gap: 0.5rem;
-            flex-direction: column;
+            gap: 0;
+            flex-direction: row;
             width: 100%;
-            padding: 0 1rem;
+            padding: 0;
+            position: relative;
           }
 
           .lightbox-image {
             max-width: 100%;
-            max-height: 70vh;
-            order: 2;
+            max-height: 80vh;
+            flex: 1;
           }
 
           .lightbox-nav-container {
-            order: 3;
-            gap: 1.5rem;
-          }
-
-          .lightbox-nav {
-            position: static;
-            display: inline-flex;
-          }
-
-          .lightbox-close {
-            order: 1;
-            align-self: flex-end;
-            margin-bottom: 1rem;
+            display: none;
           }
         }
 
