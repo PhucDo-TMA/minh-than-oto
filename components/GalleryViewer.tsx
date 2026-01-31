@@ -21,6 +21,11 @@ export default function GalleryViewer({
   const [zoomLevel, setZoomLevel] = useState(1);
   const [pinchStartDistance, setPinchStartDistance] = useState<number | null>(null);
   const [pinchStartZoom, setPinchStartZoom] = useState(1);
+  const [offsetX, setOffsetX] = useState(0);
+  const [offsetY, setOffsetY] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStartX, setDragStartX] = useState(0);
+  const [dragStartY, setDragStartY] = useState(0);
 
   const displayImage = images.length > 0 ? images[currentIndex] : mainImage;
 
@@ -29,6 +34,8 @@ export default function GalleryViewer({
 
   const goToPrevious = () => {
     setIsTransitioning(true);
+    setOffsetX(0);
+    setOffsetY(0);
     setTimeout(() => {
       setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
       setIsTransitioning(false);
@@ -37,6 +44,8 @@ export default function GalleryViewer({
 
   const goToNext = () => {
     setIsTransitioning(true);
+    setOffsetX(0);
+    setOffsetY(0);
     setTimeout(() => {
       setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
       setIsTransitioning(false);
@@ -54,6 +63,27 @@ export default function GalleryViewer({
   const closeLightbox = () => {
     setIsLightboxOpen(false);
     setZoomLevel(1);
+    setOffsetX(0);
+    setOffsetY(0);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (zoomLevel <= 1) return;
+    setIsDragging(true);
+    setDragStartX(e.clientX - offsetX);
+    setDragStartY(e.clientY - offsetY);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    const newX = e.clientX - dragStartX;
+    const newY = e.clientY - dragStartY;
+    setOffsetX(newX);
+    setOffsetY(newY);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
   };
 
   const handleImageClick = () => {
@@ -61,6 +91,8 @@ export default function GalleryViewer({
       setZoomLevel(zoomLevel + 0.5);
     } else {
       setZoomLevel(1);
+      setOffsetX(0);
+      setOffsetY(0);
     }
   };
 
@@ -78,9 +110,20 @@ export default function GalleryViewer({
       setPinchStartZoom(zoomLevel);
       setTouchStart(null);
       setTouchEnd(null);
+      setIsDragging(false);
     } else if (e.touches.length === 1) {
-      setTouchEnd(null);
-      setTouchStart(e.targetTouches[0].clientX);
+      if (zoomLevel > 1) {
+        // Dragging mode for zoomed image
+        e.preventDefault();
+        setIsDragging(true);
+        setDragStartX(e.targetTouches[0].clientX - offsetX);
+        setDragStartY(e.targetTouches[0].clientY - offsetY);
+      } else {
+        // Swipe mode for navigation
+        setTouchEnd(null);
+        setTouchStart(e.targetTouches[0].clientX);
+        setIsDragging(false);
+      }
     }
   };
 
@@ -92,12 +135,24 @@ export default function GalleryViewer({
       const newZoom = Math.min(3, Math.max(1, pinchStartZoom * scale));
       setZoomLevel(newZoom);
     } else if (e.touches.length === 1) {
-      setTouchEnd(e.targetTouches[0].clientX);
+      if (isDragging && zoomLevel > 1) {
+        // Drag to pan
+        e.preventDefault();
+        const newX = e.targetTouches[0].clientX - dragStartX;
+        const newY = e.targetTouches[0].clientY - dragStartY;
+        setOffsetX(newX);
+        setOffsetY(newY);
+      } else if (!isDragging && zoomLevel === 1) {
+        // Swipe navigation
+        setTouchEnd(e.targetTouches[0].clientX);
+      }
     }
   };
 
   const handleLightboxTouchEnd = () => {
     setPinchStartDistance(null);
+    setIsDragging(false);
+    
     if (!touchStart || !touchEnd) return;
     
     const distance = touchStart - touchEnd;
@@ -228,11 +283,26 @@ export default function GalleryViewer({
               ◀
             </button>
             
-            <div className="lightbox-image" style={{ opacity: isTransitioning ? 0.3 : 1, transform: `scale(${zoomLevel})`, cursor: zoomLevel < 3 ? 'zoom-in' : 'zoom-out' }} onClick={handleImageClick} onWheel={handleWheel}>
+            <div 
+              className="lightbox-image" 
+              style={{ 
+                opacity: isTransitioning ? 0.3 : 1, 
+                transform: `scale(${zoomLevel}) translate(${offsetX}px, ${offsetY}px)`,
+                cursor: zoomLevel > 1 ? (isDragging ? 'grabbing' : 'grab') : (zoomLevel < 3 ? 'zoom-in' : 'zoom-out'),
+                userSelect: isDragging ? 'none' : 'auto'
+              }} 
+              onClick={handleImageClick} 
+              onWheel={handleWheel}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+            >
               <img
                 src={displayImage}
                 alt={carName}
                 className="zoomed-image"
+                draggable={false}
               />
             </div>
 
