@@ -1,6 +1,7 @@
 import carData from "./cars.json";
 
 export interface Car {
+  order: number;
   name: string;
   slug: string;
   image: string;

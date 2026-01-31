@@ -273,6 +273,10 @@ export default function AdminPage() {
                 <input name="year" type="number" value={form.year} onChange={handleChange} />
               </div>
               <div className="form-row">
+                <label>Giá (VNĐ)</label>
+                <input name="price" type="number" value={form.price} onChange={handleChange} placeholder="vd: 299000000" />
+              </div>
+              <div className="form-row">
                 <label>Giá hiển thị</label>
                 <input name="priceFormatted" value={form.priceFormatted} onChange={handleChange} placeholder="vd: 1.8 tỷ" />
               </div>

@@ -365,7 +365,7 @@
       "Hỗ trợ khởi hành ngang dốc HAC",
       "Camera lùi & cảm biến lùi"
     ],
-    "order": 11
+    "order": 10
   },
   {
     "name": "Mazda3 2020 Premium",
@@ -405,7 +405,7 @@
       "Trợ lực khởi hành ngang dốc (HLA)",
       "Cảm biến lùi + Camera lùi"
     ],
-    "order": 12
+    "order": 11
   },
   {
     "name": "Ford Ecosport 2019",
@@ -442,7 +442,7 @@
       "ABS + EBD + BA – hệ thống chống bó cứng phanh và phân phối lực phanh điện tử",
       "Cân bằng điện tử ESP & hill start assist"
     ],
-    "order": 13
+    "order": 12
   },
   {
     "name": "Mitsubishi Xpander Cross 2021",
@@ -478,7 +478,7 @@
       "Cảm biến lùi + Camera lùi – hỗ trợ đỗ xe an toàn hơn",
       "Túi khí đa điểm – gia tăng bảo vệ hành khách"
     ],
-    "order": 10
+    "order": 13
   },
   {
     "name": "Toyota Innova E 2012",
