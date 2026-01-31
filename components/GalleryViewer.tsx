@@ -202,16 +202,30 @@ export default function GalleryViewer({
     }
   };
 
-  // Prevent body scroll when lightbox is open
+  // Prevent body scroll when lightbox is open and handle keyboard events
   useEffect(() => {
     if (isLightboxOpen) {
       document.body.style.overflow = 'hidden';
+      
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          goToPrevious();
+        } else if (e.key === 'ArrowRight') {
+          goToNext();
+        }
+      };
+      
+      window.addEventListener('keydown', handleKeyDown);
+      
+      return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = 'unset';
+      };
     } else {
       document.body.style.overflow = 'unset';
     }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
   }, [isLightboxOpen]);
 
   return (
@@ -477,7 +491,7 @@ export default function GalleryViewer({
         }
 
         .lightbox-close {
-          position: absolute;
+          position: fixed;
           top: 1rem;
           right: 1rem;
           background: rgba(220, 38, 38, 0.9);
@@ -535,12 +549,12 @@ export default function GalleryViewer({
           display: flex;
           align-items: center;
           justify-content: center;
-          position: absolute;
+          position: fixed;
           top: 50%;
           transform: translateY(-50%);
           box-shadow: 0 4px 12px rgba(37, 99, 235, 0.6);
           flex-shrink: 0;
-          z-index: 1000;
+          z-index: 10000;
         }
 
         .lightbox-prev {
@@ -625,7 +639,7 @@ export default function GalleryViewer({
             height: 45px;
             font-size: 1.2rem;
             padding: 0.25rem;
-            position: absolute;
+            position: fixed;
             top: 50%;
             transform: translateY(-50%);
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
@@ -651,8 +665,8 @@ export default function GalleryViewer({
             font-size: 1.5rem;
             width: 45px;
             height: 45px;
-            top: 1rem;
-            right: 1rem;
+            top: 0.5rem;
+            right: 0.5rem;
           }
 
           .lightbox-content {
