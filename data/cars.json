@@ -568,5 +568,188 @@
       "Cảm biến lùi / camera lùi"
     ],
     "order": 14
+  },
+  {
+    "name": "Toyota Camry 2015",
+    "slug": "Toyota-Camry-2015-2.5G",
+    "image": "/cars/Toyota/Camry_2015_520/mainnew.jpg",
+    "year": 2015,
+    "price": 520000000,
+    "priceFormatted": "520 triệu",
+    "odometer": "Liên hệ",
+    "category": "Sedan",
+    "brand": "Toyota",
+    "description": "Toyota Camry 2015 – Bản 2.5G Số Tự Động (AT) – Sedan hạng D sang trọng, vận hành êm ái và đáng tin cậy. Chiếc Camry 2.5G 2015 là một trong những lựa chọn đáng giá trong phân khúc sedan hạng D tại Việt Nam, nhất là với ai muốn phong cách lịch lãm, cảm giác lái mượt mà và trang bị đầy đủ nhưng vẫn giữ được giá trị sử dụng cao theo thời gian.",
+    "specs": {
+      "engine": "2.5 L",
+      "power": "178 HP",
+      "gearbox": "6AT",
+      "acceleration": "9s",
+      "topSpeed": "210 km/h",
+      "fuelConsumption": "7.8 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Camry_2015_520/mainnew.jpg",
+      "/cars/Toyota/Camry_2015_520/side.jpg",
+      "/cars/Toyota/Camry_2015_520/sidefront.jpg",
+      "/cars/Toyota/Camry_2015_520/siderear.jpg",
+      "/cars/Toyota/Camry_2015_520/rear.jpg",
+      "/cars/Toyota/Camry_2015_520/noithat.jpg",
+      "/cars/Toyota/Camry_2015_520/ghesau.jpg",
+      "/cars/Toyota/Camry_2015_520/may.jpg"
+    ],
+    "features": [
+      "ABS + EBD + BA – bộ phanh an toàn cơ bản nhưng hiệu quả",
+      "Cân bằng điện tử (VSC) – giúp kiểm soát thân xe tốt hơn khi xoay/ô-vít",
+      "Hỗ trợ khởi hành ngang dốc (HAC) – hữu ích khi leo dốc",
+      "Túi khí đa điểm – an toàn chủ động cho cả tài xế và hành khách"
+    ]
+  },
+  {
+    "name": "Hyundai Stargazer 2022",
+    "slug": "Hyundai-Stargazer-2022",
+    "image": "/cars/Hyundai/STARGAZER_2022_443/main.jpg",
+    "year": 2022,
+    "price": 443000000,
+    "priceFormatted": "443 triệu",
+    "odometer": "49,000km",
+    "category": "SUV",
+    "brand": "Hyundai",
+    "description": "Chiếc Hyundai Stargazer 2022 là mẫu MPV 7 chỗ cỡ nhỏ đến từ Hyundai, được nhập khẩu từ Indonesia và được bán tại Việt Nam với nhiều phiên bản lựa chọn cùng mức giá cực hấp dẫn trong phân khúc xe gia đình. Đây là một trong những mẫu MPV “đáng cân nhắc” nếu bạn muốn xe rộng, trang bị hiện đại nhưng vẫn dễ sử dụng và tiết kiệm nhiên liệu",
+    "specs": {
+      "engine": "xăng 1.5L",
+      "power": "115HP",
+      "gearbox": "CVT",
+      "acceleration": "10s",
+      "topSpeed": "170 – 180 km/h",
+      "fuelConsumption": "6.1–6.5 L/100 km"
+    },
+    "gallery": [
+      "/cars/Hyundai/STARGAZER_2022_443/main.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/sidefront.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/side.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/rear.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/noithat.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/ghetruoc.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/ghesau.jpg",
+      "/cars/Hyundai/STARGAZER_2022_443/may.jpg"
+    ],
+    "features": [
+      "Hỗ trợ tránh va chạm trước & sau",
+      "Hỗ trợ giữ làn đường, cảnh báo mất tập trung",
+      "Cảnh báo điểm mù, cảnh báo mở cửa an toàn",
+      "Camera lùi / cảm biến lùi",
+      "ABS / EBD, cân bằng điện tử, hỗ trợ khởi hành ngang dốc"
+    ]
+  },
+  {
+    "name": "Ford Escape 2008",
+    "slug": "Ford-Escape-2008",
+    "image": "/cars/Ford/Escape_2008_235/main.jpg",
+    "year": 2008,
+    "price": 235000000,
+    "priceFormatted": "235 triệu",
+    "odometer": "131,000 km",
+    "category": "SUV",
+    "brand": "Ford",
+    "description": "Ford Escape 2008 – SUV đô thị/đường trường với thiết kế thực dụng, vận hành đa dụng và đa lựa chọn động cơ. Là mẫu SUV cỡ nhỏ phổ biến ở thị trường Bắc Mỹ và nhiều nước khác, nổi tiếng với chân không quá “hầm hố” nhưng linh hoạt, phù hợp cả đi lại hằng ngày và truyền tải gia đình/đồ đạc.",
+    "specs": {
+      "engine": "xăng 2.3L",
+      "power": "153 HP",
+      "gearbox": "4AT",
+      "acceleration": "10.8s",
+      "topSpeed": "175 km/h",
+      "fuelConsumption": "11.2–9.8 L/100 km"
+    },
+    "gallery": [
+      "/cars/Ford/Escape_2008_235/main.jpg",
+      "/cars/Ford/Escape_2008_235/sidefront.jpg",
+      "/cars/Ford/Escape_2008_235/siderear.jpg",
+      "/cars/Ford/Escape_2008_235/rear.jpg",
+      "/cars/Ford/Escape_2008_235/noithat.jpg",
+      "/cars/Ford/Escape_2008_235/ghetruoc.jpg",
+      "/cars/Ford/Escape_2008_235/ghesau.jpg",
+      "/cars/Ford/Escape_2008_235/may.jpg"
+    ],
+    "features": [
+      "ABS + EBD — hệ thống phanh an toàn",
+      "Tuỳ chọn túi khí đa điểm",
+      "Hệ thống kiểm soát ổn định AdvanceTrac® (giúp hạn chế lật/tuột độ bám)"
+    ]
+  },
+  {
+    "name": "Toyota Innova 2016",
+    "slug": "Toyota-Innova-2016-sotudong",
+    "image": "/cars/Toyota/Innova_2016_365/main.jpg",
+    "year": 2016,
+    "price": 365000000,
+    "priceFormatted": "365 triệu",
+    "odometer": "97,000 km",
+    "category": "SUV",
+    "brand": "Toyota",
+    "description": "Chiếc Toyota Innova 2016 số tự động là mẫu MPV 7 chỗ rất được ưa chuộng tại Việt Nam nhờ độ bền, vận hành êm ái và không gian rộng rãi cho gia đình hoặc chạy dịch vụ",
+    "specs": {
+      "engine": "xăng 2.0L",
+      "power": "140 HP",
+      "gearbox": "6AT",
+      "acceleration": "16.4 giây",
+      "topSpeed": "160–170 km/h",
+      "fuelConsumption": "9.1 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Innova_2016_365/main.jpg",
+      "/cars/Toyota/Innova_2016_365/front.jpg",
+      "/cars/Toyota/Innova_2016_365/siderear.jpg",
+      "/cars/Toyota/Innova_2016_365/rear.jpg",
+      "/cars/Toyota/Innova_2016_365/noithat.jpg",
+      "/cars/Toyota/Innova_2016_365/ghetruoc.jpg",
+      "/cars/Toyota/Innova_2016_365/ghesau.jpg",
+      "/cars/Toyota/Innova_2016_365/may.jpg"
+    ],
+    "features": [
+      "ABS + EBD – phanh an toàn",
+      "Hệ thống điều hòa tự động",
+      "Màn hình giải trí / DVD + USB / Bluetooth – nghe nhạc, kết nối đa phương tiện",
+      "Cảnh báo & túi khí"
+    ]
+  },
+  {
+    "name": "Kia Sedona 2019",
+    "slug": "Kia-Sedona-2019-maydau",
+    "image": "/cars/Kia/Sedona_2019_738/main.jpg",
+    "year": 2019,
+    "price": 738000000,
+    "priceFormatted": "738 triệu",
+    "odometer": "72,000 km",
+    "category": "SUV",
+    "brand": "Kia",
+    "description": "Kia Sedona 2019 – Bản máy dầu 2.2 CRDi, số tự động 8 AT — MPV 7 chỗ rộng rãi, sang trọng và mạnh mẽ cho gia đình hoặc sử dụng dịch vụ",
+    "specs": {
+      "engine": "Diesel 2.2 L",
+      "power": "197HP",
+      "gearbox": "8AT",
+      "acceleration": "10.5s",
+      "topSpeed": "180 km/h",
+      "fuelConsumption": "8.3–8.7 L / 100 km"
+    },
+    "gallery": [
+      "/cars/Kia/Sedona_2019_738/main.jpg",
+      "/cars/Kia/Sedona_2019_738/sidefront.jpg",
+      "/cars/Kia/Sedona_2019_738/siderear.jpg",
+      "/cars/Kia/Sedona_2019_738/rear.jpg",
+      "/cars/Kia/Sedona_2019_738/noithat.jpg",
+      "/cars/Kia/Sedona_2019_738/ghetruoc.jpg",
+      "/cars/Kia/Sedona_2019_738/ghesau.jpg",
+      "/cars/Kia/Sedona_2019_738/may.jpg"
+    ],
+    "features": [
+      "Màn hình AVN 8 inch tích hợp định vị",
+      "Điều hòa 3 vùng độc lập – mát đều cho cả 3 hàng ghế",
+      "Cảnh báo điểm mù BSD, Cruise Control, Camera lùi + cảm biến trước/sau",
+      "Ghế bọc da chỉnh điện",
+      "ABS + EBD + BA – phanh an toàn",
+      "ESP + HAC – cân bằng điện tử, hỗ trợ khởi hành ngang dốc",
+      "6 túi khí – đảm bảo an toàn hành khách"
+    ]
   }
 ]
