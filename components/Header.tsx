@@ -7,6 +7,12 @@ import { useState } from "react";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    // Force reload to home page (resets pagination to page 1)
+    window.location.href = "/";
+  };
+
   return (
     <>
       {/* Contact Info Bar */}
@@ -28,7 +34,7 @@ export default function Header() {
       {/* Main Header */}
       <header className="header">
         <div className="header-container">
-          <Link href="/" className="logo">
+          <Link href="/" className="logo" scroll={true} onClick={handleLogoClick}>
             <div className="logo-image">
               <Image
                 src="/logo-car.png"
