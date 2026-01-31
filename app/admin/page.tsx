@@ -10,6 +10,7 @@ interface CarForm {
   year: number;
   priceFormatted: string;
   price: number;
+  odometer: string;
   category: string;
   brand: string;
   description: string;
@@ -33,6 +34,7 @@ export default function AdminPage() {
     year: new Date().getFullYear(),
     priceFormatted: "",
     price: 0,
+    odometer: "",
     category: "Sedan",
     brand: "",
     description: "",
@@ -88,6 +90,7 @@ export default function AdminPage() {
       year: form.year,
       price: form.price,
       priceFormatted: form.priceFormatted,
+      odometer: form.odometer,
       category: form.category,
       brand: form.brand,
       description: form.description,
@@ -132,6 +135,7 @@ export default function AdminPage() {
       year: new Date().getFullYear(),
       priceFormatted: "",
       price: 0,
+      odometer: "",
       category: "Sedan",
       brand: "",
       description: "",
@@ -156,6 +160,7 @@ export default function AdminPage() {
       year: c.year,
       priceFormatted: c.priceFormatted,
       price: c.price,
+      odometer: c.odometer || "",
       category: c.category,
       brand: c.brand,
       description: c.description,
@@ -279,6 +284,10 @@ export default function AdminPage() {
               <div className="form-row">
                 <label>Giá hiển thị</label>
                 <input name="priceFormatted" value={form.priceFormatted} onChange={handleChange} placeholder="vd: 1.8 tỷ" />
+              </div>
+              <div className="form-row">
+                <label>Odo (số km đã chạy)</label>
+                <input name="odometer" value={form.odometer} onChange={handleChange} placeholder="vd: 45,000 km" />
               </div>
               <div className="form-row">
                 <label>Hình ảnh chính (path)</label>

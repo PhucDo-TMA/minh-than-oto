@@ -28,7 +28,7 @@ export default function CarCard({ car }: CarCardProps) {
           <p className="car-brand">{car.brand}</p>
           
           <div className="car-specs">
-            <span>⚡ {car.specs.power}</span>
+            <span>🛣️ {car.odometer}</span>
             <span>🔧 {car.specs.gearbox}</span>
             <span>📅 {car.year}</span>
           </div>

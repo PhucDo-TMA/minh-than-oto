@@ -8,6 +8,7 @@ export interface Car {
   year: number;
   price: number;
   priceFormatted: string;
+  odometer: string;
   category: "SUV" | "Sedan" | "Bán tải" | "Hatchback";
   brand: string;
   specs: {
