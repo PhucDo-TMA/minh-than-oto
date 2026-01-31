@@ -116,8 +116,9 @@ export default function GalleryViewer({
         // Dragging mode for zoomed image
         e.preventDefault();
         setIsDragging(true);
-        setDragStartX(e.targetTouches[0].clientX - offsetX);
-        setDragStartY(e.targetTouches[0].clientY - offsetY);
+        // Store touch position when drag starts (not offset-adjusted)
+        setDragStartX(e.targetTouches[0].clientX);
+        setDragStartY(e.targetTouches[0].clientY);
       } else {
         // Swipe mode for navigation
         setTouchEnd(null);
@@ -136,12 +137,16 @@ export default function GalleryViewer({
       setZoomLevel(newZoom);
     } else if (e.touches.length === 1) {
       if (isDragging && zoomLevel > 1) {
-        // Drag to pan
+        // Drag to pan - calculate delta from drag start position
         e.preventDefault();
-        const newX = e.targetTouches[0].clientX - dragStartX;
-        const newY = e.targetTouches[0].clientY - dragStartY;
-        setOffsetX(newX);
-        setOffsetY(newY);
+        const deltaX = e.targetTouches[0].clientX - dragStartX;
+        const deltaY = e.targetTouches[0].clientY - dragStartY;
+        // Apply delta to existing offset
+        setOffsetX(offsetX + deltaX);
+        setOffsetY(offsetY + deltaY);
+        // Update drag start to current position for next frame
+        setDragStartX(e.targetTouches[0].clientX);
+        setDragStartY(e.targetTouches[0].clientY);
       } else if (!isDragging && zoomLevel === 1) {
         // Swipe navigation
         setTouchEnd(e.targetTouches[0].clientX);
