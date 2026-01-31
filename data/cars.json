@@ -1,6 +1,6 @@
 [
   {
-    "name": "Toyota VIOS",
+    "name": "Toyota VIOS 2017",
     "slug": "vios-2017-tudong",
     "image": "/cars/Toyota/Vios_2017_299/Front.jpg",
     "year": 2017,
@@ -38,7 +38,7 @@
     "order": 1
   },
   {
-    "name": "Suzuki Ertiga",
+    "name": "Suzuki Ertiga 2020",
     "slug": "suzuki-ertiga-2020",
     "image": "/cars/Suzuki/Etiga_2020_390/main.jpg",
     "year": 2020,
@@ -73,7 +73,7 @@
     "order": 2
   },
   {
-    "name": "Ford EcoSport",
+    "name": "Ford EcoSport 2014",
     "slug": "ford-ecosport-2014",
     "image": "/cars/Ford/Ecosport_2014_300/main.jpg",
     "year": 2014,
@@ -147,7 +147,7 @@
     "order": 4
   },
   {
-    "name": "Chevrolet Cruze",
+    "name": "Chevrolet Cruze 2015",
     "slug": "chevrolet-cruze-2015-ltz",
     "image": "/cars/Chevrolet/Cruze_2015_268/side.jpg",
     "year": 2015,
@@ -187,7 +187,7 @@
     "order": 5
   },
   {
-    "name": "Ford EcoSport",
+    "name": "Ford EcoSport 2016",
     "slug": "ford-ecosport-2016-titanium",
     "image": "/cars/Ford/Ecosport_2016_315/siderear.jpg",
     "year": 2016,
@@ -225,7 +225,7 @@
     "order": 6
   },
   {
-    "name": "Chevrolet Cruze",
+    "name": "Chevrolet Cruze 2016",
     "slug": "chevrolet-cruze-2016-san",
     "image": "/cars/Chevrolet/Cruze_2016_230/main.jpg",
     "year": 2016,
@@ -263,7 +263,7 @@
     "order": 7
   },
   {
-    "name": "Toyota Camry",
+    "name": "Toyota Camry 2008",
     "slug": "toyota-camry-2008-my",
     "image": "/cars/Toyota/Camry_2008_375/main.jpg",
     "year": 2008,
@@ -300,7 +300,7 @@
     "order": 8
   },
   {
-    "name": "Honda City RS",
+    "name": "Honda City RS 2023",
     "slug": "Honda-City-RS-2023",
     "image": "/cars/Honda/City_2023_495/main.jpg",
     "year": 2023,
