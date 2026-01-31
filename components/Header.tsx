@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import ZaloIcon from "./ZaloIcon";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,10 +21,6 @@ export default function Header() {
             <a href="tel:0936211276">0936 211 276 (Thân)</a>
             <span className="separator">·</span>
             <a href="tel:0342579086">034 2579 086 (Phúc)</a>
-            <span className="separator">·</span>
-            <a href="https://zalo.me/0936211276" target="_blank" rel="noopener noreferrer" className="zalo-link">
-              <ZaloIcon /> Zalo
-            </a>
           </div>
         </div>
       </div>
