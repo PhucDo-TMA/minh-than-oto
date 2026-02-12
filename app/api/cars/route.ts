@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
+export const runtime = "nodejs";
+
 const dataPath = path.join(process.cwd(), "data", "cars.json");
 
 async function readCars() {

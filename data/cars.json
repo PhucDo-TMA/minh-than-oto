@@ -35,7 +35,7 @@
       "Túi khí đôi phía trước, hệ thống ổn định thân xe điện tử VSC",
       "Camera lùi / cảm biến lùi ở bản cao hơn giúp đỗ xe an toàn."
     ],
-    "order": 1
+    "order": 12
   },
   {
     "name": "Suzuki Ertiga 2020",
@@ -70,7 +70,7 @@
       "Hỗ trợ khởi hành ngang dốc (HHC)",
       "Phanh ABS + EBD, ít nhất 2 túi khí, cảm biến lùi"
     ],
-    "order": 2
+    "order": 22
   },
   {
     "name": "Ford EcoSport 2014",
@@ -107,7 +107,7 @@
       "Hỗ trợ khởi hành ngang dốc",
       "Cảm biến lùi và camera lùi tùy chọn"
     ],
-    "order": 3
+    "order": 6
   },
   {
     "name": "Hyundai Azera Limited ",
@@ -144,7 +144,7 @@
       "Hệ thống điều hoà tự động 2 vùng",
       "Hệ thống âm thanh premium"
     ],
-    "order": 4
+    "order": 5
   },
   {
     "name": "Chevrolet Cruze 2015",
@@ -454,7 +454,7 @@
       "ABS + EBD + BA – hệ thống chống bó cứng phanh và phân phối lực phanh điện tử",
       "Cân bằng điện tử ESP & hill start assist"
     ],
-    "order": 12
+    "order": 13
   },
   {
     "name": "Mitsubishi Xpander Cross 2021",
@@ -491,7 +491,7 @@
       "Cảm biến lùi + Camera lùi – hỗ trợ đỗ xe an toàn hơn",
       "Túi khí đa điểm – gia tăng bảo vệ hành khách"
     ],
-    "order": 13
+    "order": 14
   },
   {
     "name": "Toyota Innova E 2012",
@@ -567,7 +567,7 @@
       "Hỗ trợ khởi hành ngang dốc HAC",
       "Cảm biến lùi / camera lùi"
     ],
-    "order": 14
+    "order": 16
   },
   {
     "name": "Toyota Camry 2015",
@@ -603,7 +603,8 @@
       "Cân bằng điện tử (VSC) – giúp kiểm soát thân xe tốt hơn khi xoay/ô-vít",
       "Hỗ trợ khởi hành ngang dốc (HAC) – hữu ích khi leo dốc",
       "Túi khí đa điểm – an toàn chủ động cho cả tài xế và hành khách"
-    ]
+    ],
+    "order": 17
   },
   {
     "name": "Hyundai Stargazer 2022",
@@ -640,7 +641,8 @@
       "Cảnh báo điểm mù, cảnh báo mở cửa an toàn",
       "Camera lùi / cảm biến lùi",
       "ABS / EBD, cân bằng điện tử, hỗ trợ khởi hành ngang dốc"
-    ]
+    ],
+    "order": 18
   },
   {
     "name": "Ford Escape 2008",
@@ -675,7 +677,8 @@
       "ABS + EBD — hệ thống phanh an toàn",
       "Tuỳ chọn túi khí đa điểm",
       "Hệ thống kiểm soát ổn định AdvanceTrac® (giúp hạn chế lật/tuột độ bám)"
-    ]
+    ],
+    "order": 19
   },
   {
     "name": "Toyota Innova 2016",
@@ -711,7 +714,8 @@
       "Hệ thống điều hòa tự động",
       "Màn hình giải trí / DVD + USB / Bluetooth – nghe nhạc, kết nối đa phương tiện",
       "Cảnh báo & túi khí"
-    ]
+    ],
+    "order": 20
   },
   {
     "name": "Kia Sedona 2019",
@@ -750,6 +754,191 @@
       "ABS + EBD + BA – phanh an toàn",
       "ESP + HAC – cân bằng điện tử, hỗ trợ khởi hành ngang dốc",
       "6 túi khí – đảm bảo an toàn hành khách"
-    ]
+    ],
+    "order": 21
+  },
+  {
+    "name": "Toyota Vios E 2022",
+    "slug": "Toyota-Vios-E-2022",
+    "image": "/cars/Toyota/Vios_E_2022_355/main.jpg",
+    "year": 2022,
+    "price": 355000000,
+    "priceFormatted": "355 triệu",
+    "odometer": "35,000 km",
+    "category": "Sedan",
+    "brand": "Toyota",
+    "description": "Nếu bạn đang tìm một chiếc sedan hạng B vừa bền bỉ, vừa tiết kiệm xăng, vận hành nhẹ nhàng trong đô thị lẫn đường trường, thì Vios E 2022 chính là lựa chọn đáng mua hàng đầu trong phân khúc.",
+    "specs": {
+      "engine": "1.5 L",
+      "power": "107 HP",
+      "gearbox": "CVT",
+      "acceleration": "11s",
+      "topSpeed": "170 km/h",
+      "fuelConsumption": "5.7 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Vios_E_2022_355/main.jpg",
+      "/cars/Toyota/Vios_E_2022_355/sidefront.jpg",
+      "/cars/Toyota/Vios_E_2022_355/siderear.jpg",
+      "/cars/Toyota/Vios_E_2022_355/rear.jpg",
+      "/cars/Toyota/Vios_E_2022_355/noithat.jpg",
+      "/cars/Toyota/Vios_E_2022_355/cuatruoc.jpg",
+      "/cars/Toyota/Vios_E_2022_355/cuasau.jpg",
+      "/cars/Toyota/Vios_E_2022_355/may.jpg"
+    ],
+    "features": [
+      "Hệ thống an toàn đầy đủ: ABS, EBD, BA",
+      "cân bằng điện tử VSC, kiểm soát lực kéo TRC",
+      "hỗ trợ khởi hành ngang dốc HAC",
+      "nhiều túi khí bảo vệ an toàn tối đa"
+    ],
+    "order": 1
+  },
+  {
+    "name": "Toyota Fortuner G 2015",
+    "slug": "Toyota-Fortuner-G-2015",
+    "image": "/cars/Toyota/Fortuner_2015_485/main.jpg",
+    "year": 2015,
+    "price": 485000000,
+    "priceFormatted": "485 triệu",
+    "odometer": "98,000 km",
+    "category": "SUV",
+    "brand": "Toyota",
+    "description": "Toyota Fortuner G 2015 – SUV “Trưởng thành” bền bỉ, máy dầu số sàn, chinh phục mọi địa hình! Nếu bạn đang tìm xe SUV 7 chỗ mạnh mẽ, tiết kiệm nhiên liệu và ít hỏng vặt, Fortuner G 2015 máy dầu số sàn là lựa chọn cực kỳ đáng cân nhắc.",
+    "specs": {
+      "engine": "Diesel 2.8 L",
+      "power": "177 HP",
+      "gearbox": "6MT",
+      "acceleration": "11-12 giây",
+      "topSpeed": "170-180 km/h",
+      "fuelConsumption": "7.8 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Fortuner_2015_485/main.jpg",
+      "/cars/Toyota/Fortuner_2015_485/sidefront.jpg",
+      "/cars/Toyota/Fortuner_2015_485/siderear.jpg",
+      "/cars/Toyota/Fortuner_2015_485/rear.jpg",
+      "/cars/Toyota/Fortuner_2015_485/noithat.jpg",
+      "/cars/Toyota/Fortuner_2015_485/cuatruoc.jpg",
+      "/cars/Toyota/Fortuner_2015_485/ghesau.jpg",
+      "/cars/Toyota/Fortuner_2015_485/may.jpg"
+    ],
+    "features": [
+      "Hệ thống phanh đĩa trước & sau",
+      "Hệ thống 4×4 với khoá visai trung tâm – chinh phục đường trơn, bùn đất.",
+      "Hệ thống an toàn tiêu chuẩn (ABS & túi khí) – an tâm cho cả gia đình."
+    ],
+    "order": 4
+  },
+  {
+    "name": "Toyota Innova G 2007",
+    "slug": "Toyota-Innova-G-2007",
+    "image": "/cars/Toyota/Innova_2007_179/main.jpg",
+    "year": 2007,
+    "price": 179000000,
+    "priceFormatted": "179 triệu",
+    "odometer": "",
+    "category": "SUV",
+    "brand": "Toyota",
+    "description": "Toyota Innova G 2007 – MPV 7 chỗ “đa dụng” bền bỉ, rộng rãi và tiện nghi hàng đầu trong phân khúc xe cũ! Là một trong những mẫu MPV được ưa chuộng với khả năng vận hành ổn định, chi phí nuôi xe thấp, phù hợp cả gia đình lẫn chạy dịch vụ.",
+    "specs": {
+      "engine": "2.0 L",
+      "power": "134 Hp",
+      "gearbox": "5MT",
+      "acceleration": "",
+      "topSpeed": "",
+      "fuelConsumption": "9 – 11 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Innova_2007_179/main.jpg",
+      "/cars/Toyota/Innova_2007_179/sidefront.jpg",
+      "/cars/Toyota/Innova_2007_179/side.jpg",
+      "/cars/Toyota/Innova_2007_179/rear.jpg",
+      "/cars/Toyota/Innova_2007_179/noithat.jpg",
+      "/cars/Toyota/Innova_2007_179/ghetruoc.jpg",
+      "/cars/Toyota/Innova_2007_179/ghesau.jpg",
+      "/cars/Toyota/Innova_2007_179/may.jpg"
+    ],
+    "features": [
+      "Không gian rộng",
+      "Điều hòa ghế sau",
+      "Ghế và nội thất thực dụng"
+    ],
+    "order": 2
+  },
+  {
+    "name": "Toyota Innova 2011",
+    "slug": "Toyota-Innova-2011-MT",
+    "image": "/cars/Toyota/Innova_2011_230/main.jpg",
+    "year": 2017,
+    "price": 230000000,
+    "priceFormatted": "230 ",
+    "odometer": "",
+    "category": "SUV",
+    "brand": "Toyota",
+    "description": "Chiếc Toyota Innova 2011 số sàn là một trong những mẫu xe MPV 7 chỗ được ưa chuộng nhất tại thị trường xe cũ Việt Nam: vận hành đơn giản, ít hỏng vặt, khoang rộng rãi và chi phí bảo dưỡng thấp – đặc biệt với phiên bản số tay 5 cấp rất phù hợp cho anh/chị muốn xe “chất lượng – tiết kiệm”.",
+    "specs": {
+      "engine": "2.0 L",
+      "power": "134 HP",
+      "gearbox": "5MT",
+      "acceleration": "",
+      "topSpeed": "",
+      "fuelConsumption": "8–11 L/100 km"
+    },
+    "gallery": [
+      "/cars/Toyota/Innova_2011_230/main.jpg",
+      "/cars/Toyota/Innova_2011_230/sidefront.jpg",
+      "/cars/Toyota/Innova_2011_230/siderear.jpg",
+      "/cars/Toyota/Innova_2011_230/side.jpg",
+      "/cars/Toyota/Innova_2011_230/rear.jpg",
+      "/cars/Toyota/Innova_2011_230/noithat.jpg",
+      "/cars/Toyota/Innova_2011_230/ghetruoc.jpg",
+      "/cars/Toyota/Innova_2011_230/cua.jpg",
+      "/cars/Toyota/Innova_2011_230/shesau.jpg",
+      "/cars/Toyota/Innova_2011_230/may.jpg"
+    ],
+    "features": [
+      "Bền bỉ “Toyota truyền thống” — ít hỏng vặt, phụ tùng dễ tìm",
+      "Khoang rộng – phù hợp gia đình & kinh doanh dịch vụ",
+      "Số sàn mang lại cảm giác kiểm soát tốt & tiết kiệm xăng hơn",
+      "Dễ lái và bảo dưỡng"
+    ],
+    "order": 3
+  },
+  {
+    "name": "Honda City 2017",
+    "slug": "Honda-City-2017-MT",
+    "image": "/cars/Honda/City_2017_268/main.jpg",
+    "year": 2017,
+    "price": 268000000,
+    "priceFormatted": "268 triệu",
+    "odometer": "",
+    "category": "Sedan",
+    "brand": "Honda",
+    "description": "Honda City thế hệ 2017 là một trong những mẫu sedan hạng B được yêu thích nhất tại thị trường Việt Nam và Đông Nam Á, mang đến sự kết hợp hoàn hảo giữa tiết kiệm nhiên liệu, vận hành nhẹ nhàng và không gian nội thất rộng rãi — đặc biệt thú vị khi chọn phiên bản số sàn 5 cấp dành cho người thích cảm giác lái chủ động.",
+    "specs": {
+      "engine": "1.5L",
+      "power": "118HP",
+      "gearbox": "5MT",
+      "acceleration": "10.5 – 10.8s",
+      "topSpeed": "190 km/h",
+      "fuelConsumption": "5.7-5.9 L/100 km"
+    },
+    "gallery": [
+      "/cars/Honda/City_2017_268/main.jpg",
+      "/cars/Honda/City_2017_268/sidefront.jpg",
+      "/cars/Honda/City_2017_268/side.jpg",
+      "/cars/Honda/City_2017_268/rear.jpg",
+      "/cars/Honda/City_2017_268/noithat.jpg",
+      "/cars/Honda/City_2017_268/ghetruoc.jpg",
+      "/cars/Honda/City_2017_268/ghesau.jpg",
+      "/cars/Honda/City_2017_268/canso.jpg"
+    ],
+    "features": [
+      "Thiết kế ngoại thất hiện đại",
+      "phanh ABS/EBD",
+      "hệ thống cân bằng điện tử"
+    ],
+    "order": 1
   }
 ]

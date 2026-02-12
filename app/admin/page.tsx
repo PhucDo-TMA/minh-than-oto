@@ -26,6 +26,7 @@ interface CarForm {
 export default function AdminPage() {
   const [cars, setCars] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
+  const [savingOrder, setSavingOrder] = useState(false);
   const [form, setForm] = useState<CarForm>({
     name: "",
     slug: "",
@@ -47,8 +48,6 @@ export default function AdminPage() {
     features: "",
   });
   const [editing, setEditing] = useState<string | null>(null);
-  const [draggedItem, setDraggedItem] = useState<string | null>(null);
-  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
 
   useEffect(() => {
     load();
@@ -58,7 +57,10 @@ export default function AdminPage() {
     setLoading(true);
     const res = await fetch("/api/cars");
     const data = await res.json();
-    setCars(data);
+    const sorted = Array.isArray(data)
+      ? [...data].sort((a, b) => (Number(a.order) || 0) - (Number(b.order) || 0))
+      : [];
+    setCars(sorted);
     setLoading(false);
   }
 
@@ -83,6 +85,7 @@ export default function AdminPage() {
       galleryArray.push(form.image);
     }
 
+    const nextOrder = cars.reduce((max, c) => Math.max(max, Number(c.order) || 0), 0) + 1;
     const payload = {
       name: form.name,
       slug: form.slug,
@@ -94,6 +97,7 @@ export default function AdminPage() {
       category: form.category,
       brand: form.brand,
       description: form.description,
+      ...(editing ? {} : { order: nextOrder }),
       specs: {
         engine: form.engine,
         power: form.power,
@@ -181,63 +185,28 @@ export default function AdminPage() {
     load();
   }
 
-  const handleDragStart = (slug: string) => {
-    setDraggedItem(slug);
-    setDragOverIndex(null);
-  };
+  function updateOrder(slug: string, value: number) {
+    setCars((prev) =>
+      prev.map((car) => (car.slug === slug ? { ...car, order: value } : car))
+    );
+  }
 
-  const handleDragOver = (e: React.DragEvent, index: number) => {
-    e.preventDefault();
-    e.dataTransfer.dropEffect = "move";
-    setDragOverIndex(index);
-  };
-
-  const handleDragLeave = () => {
-    setDragOverIndex(null);
-  };
-
-  const handleDrop = async (targetSlug: string) => {
-    if (!draggedItem || draggedItem === targetSlug) {
-      setDraggedItem(null);
-      setDragOverIndex(null);
-      return;
-    }
-
-    const draggedIdx = cars.findIndex((c) => c.slug === draggedItem);
-    const targetIdx = cars.findIndex((c) => c.slug === targetSlug);
-
-    if (draggedIdx === -1 || targetIdx === -1) {
-      setDraggedItem(null);
-      setDragOverIndex(null);
-      return;
-    }
-
-    // Create new array with reordered items
-    const newCars = [...cars];
-    const draggedCar = newCars[draggedIdx];
-    newCars.splice(draggedIdx, 1);
-    newCars.splice(targetIdx, 0, draggedCar);
-
-    // Update order field for all cars
-    const updatedCars = newCars.map((car, index) => ({
-      ...car,
-      order: index + 1,
-    }));
-
-    setCars(updatedCars);
-
-    // Save each car's new order to backend
-    for (const car of updatedCars) {
-      await fetch(`/api/cars?slug=${car.slug}`, {
+  async function saveOrder() {
+    setSavingOrder(true);
+    for (const car of cars) {
+      const res = await fetch(`/api/cars?slug=${car.slug}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(car),
+        body: JSON.stringify({ order: Number(car.order) || 0 }),
       });
+      if (!res.ok) {
+        setSavingOrder(false);
+        return alert("Lưu thứ tự thất bại");
+      }
     }
-
-    setDraggedItem(null);
-    setDragOverIndex(null);
-  };
+    setSavingOrder(false);
+    load();
+  }
 
   return (
     <div className="admin-page">
@@ -364,12 +333,18 @@ export default function AdminPage() {
 
         <section className="admin-list">
           <h2>Danh sách xe ({cars.length})</h2>
+          <div className="list-actions">
+            <button type="button" className="btn-save-order" onClick={saveOrder} disabled={savingOrder}>
+              {savingOrder ? "Đang lưu..." : "Lưu thứ tự"}
+            </button>
+          </div>
           {loading ? (
             <p>Đang tải...</p>
           ) : (
             <table className="cars-table">
               <thead>
                 <tr>
+                  <th>Thứ tự</th>
                   <th>Tên</th>
                   <th>Hãng</th>
                   <th>Giá</th>
@@ -381,14 +356,16 @@ export default function AdminPage() {
                 {cars.map((c, index) => (
                   <tr
                     key={c.slug}
-                    draggable
-                    onDragStart={() => handleDragStart(c.slug)}
-                    onDragOver={(e) => handleDragOver(e, index)}
-                    onDragLeave={handleDragLeave}
-                    onDrop={() => handleDrop(c.slug)}
-                    className={`draggable-row ${draggedItem === c.slug ? "dragging" : ""} ${dragOverIndex === index ? "drag-over" : ""}`}
                   >
-                    <td>📍 {c.name}</td>
+                    <td>
+                      <input
+                        className="order-input"
+                        type="number"
+                        value={Number(c.order) || 0}
+                        onChange={(e) => updateOrder(c.slug, Number(e.target.value))}
+                      />
+                    </td>
+                    <td>{c.name}</td>
                     <td>{c.brand}</td>
                     <td>{c.priceFormatted}</td>
                     <td>{c.year}</td>
@@ -538,22 +515,26 @@ export default function AdminPage() {
         .cars-table tr:hover {
           background: #f9fafb;
         }
-        .draggable-row {
-          cursor: move;
-          user-select: none;
-          transition: all 0.2s ease;
+        .list-actions {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 0.75rem;
         }
-        .draggable-row:hover {
-          background: #eff6ff;
+        .btn-save-order {
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 4px;
+          font-weight: 600;
+          background: #10b981;
+          color: white;
+          cursor: pointer;
         }
-        .draggable-row.dragging {
-          opacity: 0.5;
-          background: #dbeafe;
+        .btn-save-order:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
         }
-        .draggable-row.drag-over {
-          background: #cffafe;
-          box-shadow: inset 0 -3px 0 #06b6d4;
-          border-bottom: 3px solid #06b6d4;
+        .order-input {
+          width: 70px;
         }
         .actions {
           display: flex;
